@@ -1,0 +1,41 @@
+  eclass exists: /var/db/repos/gentoo/eclass/toolchain.eclass
+inherit: toolchain -> /var/db/repos/gentoo/eclass/toolchain.eclass
+*** Multiple Inheritance (Level: 2)
+  eclass exists: /var/db/repos/gentoo/eclass/edo.eclass
+inherit: edo -> /var/db/repos/gentoo/eclass/edo.eclass
+  eclass exists: /var/db/repos/gentoo/eclass/flag-o-matic.eclass
+inherit: flag-o-matic -> /var/db/repos/gentoo/eclass/flag-o-matic.eclass
+*** Multiple Inheritance (Level: 3)
+  eclass exists: /var/db/repos/gentoo/eclass/toolchain-funcs.eclass
+inherit: toolchain-funcs -> /var/db/repos/gentoo/eclass/toolchain-funcs.eclass
+*** Multiple Inheritance (Level: 4)
+  eclass exists: /var/db/repos/gentoo/eclass/multilib.eclass
+inherit: multilib -> /var/db/repos/gentoo/eclass/multilib.eclass
+*** Multiple Inheritance (Level: 5)
+  eclass exists: /var/db/repos/gentoo/eclass/toolchain-funcs.eclass
+inherit: toolchain-funcs -> /var/db/repos/gentoo/eclass/toolchain-funcs.eclass
+  eclass exists: /var/db/repos/gentoo/eclass/gnuconfig.eclass
+inherit: gnuconfig -> /var/db/repos/gentoo/eclass/gnuconfig.eclass
+  eclass exists: /var/db/repos/gentoo/eclass/libtool.eclass
+inherit: libtool -> /var/db/repos/gentoo/eclass/libtool.eclass
+*** Multiple Inheritance (Level: 3)
+  eclass exists: /var/db/repos/gentoo/eclass/toolchain-funcs.eclass
+inherit: toolchain-funcs -> /var/db/repos/gentoo/eclass/toolchain-funcs.eclass
+  eclass exists: /var/db/repos/gentoo/eclass/multilib.eclass
+inherit: multilib -> /var/db/repos/gentoo/eclass/multilib.eclass
+  eclass exists: /var/db/repos/gentoo/eclass/pax-utils.eclass
+inherit: pax-utils -> /var/db/repos/gentoo/eclass/pax-utils.eclass
+  eclass exists: /var/db/repos/gentoo/eclass/toolchain-funcs.eclass
+inherit: toolchain-funcs -> /var/db/repos/gentoo/eclass/toolchain-funcs.eclass
+  eclass exists: /var/db/repos/gentoo/eclass/prefix.eclass
+inherit: prefix -> /var/db/repos/gentoo/eclass/prefix.eclass
+EXPORT_FUNCTIONS: pkg_pretend -> toolchain_pkg_pretend
+EXPORT_FUNCTIONS: pkg_setup -> toolchain_pkg_setup
+EXPORT_FUNCTIONS: src_unpack -> toolchain_src_unpack
+EXPORT_FUNCTIONS: src_prepare -> toolchain_src_prepare
+EXPORT_FUNCTIONS: src_configure -> toolchain_src_configure
+EXPORT_FUNCTIONS: src_compile -> toolchain_src_compile
+EXPORT_FUNCTIONS: src_test -> toolchain_src_test
+EXPORT_FUNCTIONS: src_install -> toolchain_src_install
+EXPORT_FUNCTIONS: pkg_postinst -> toolchain_pkg_postinst
+EXPORT_FUNCTIONS: pkg_postrm -> toolchain_pkg_postrm

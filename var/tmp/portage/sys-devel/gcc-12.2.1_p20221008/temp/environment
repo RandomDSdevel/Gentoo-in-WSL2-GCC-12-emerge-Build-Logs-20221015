@@ -1,0 +1,4346 @@
+declare -x ABI="amd64"
+declare -x ABI_MIPS=""
+declare -x ABI_S390=""
+declare -x ABI_X86="64"
+declare -x ADAFLAGS=""
+declare -x ADA_TARGET=""
+declare -x ALSA_CARDS=""
+declare -x AMDGPU_TARGETS=""
+declare -x APACHE2_MODULES=""
+declare -x APACHE2_MPMS=""
+declare -x AR="gcc-ar"
+declare -x ARCH="amd64"
+declare BDEPEND=">=sys-devel/binutils-2.30[cet(-)?] sys-devel/gnuconfig >=app-portage/elt-patches-20170815 
+	>=sys-devel/bison-1.875
+	>=sys-devel/flex-2.5.4
+	nls? ( sys-devel/gettext )
+	test? (
+		>=dev-util/dejagnu-1.4.4
+		>=sys-devel/autogen-5.5.4
+	) sys-apps/texinfo valgrind? ( dev-util/valgrind )"
+declare -- BINPATH="/usr/x86_64-pc-linux-gnu/gcc-bin/12"
+declare -x BINPKG_FORMAT="xpak"
+declare -x BINPKG_GPG_SIGNING_BASE_COMMAND="/usr/bin/flock /run/lock/portage-binpkg-gpg.lock /usr/bin/gpg --sign --armor [PORTAGE_CONFIG]"
+declare -x BINPKG_GPG_SIGNING_DIGEST="SHA512"
+declare -x BINPKG_GPG_VERIFY_BASE_COMMAND="/usr/bin/gpg --verify --batch --no-tty --no-auto-check-trustdb --status-fd 2 [PORTAGE_CONFIG] [SIGNATURE]"
+declare -x BINPKG_GPG_VERIFY_GPG_HOME="/etc/portage/gnupg"
+declare -x BOOTSTRAP_USE="unicode internal-glib pkg-config split-usr xml python_targets_python3_10 multilib"
+declare -x BRANDING_GCC_PKGVERSION="Gentoo 12.2.1_p20221008 p1"
+declare -x CALLIGRA_FEATURES=""
+declare -x CAMERAS=""
+declare -x CBUILD="x86_64-pc-linux-gnu"
+declare -x CC="gcc"
+declare -x CCASFLAGS=""
+declare -x CFLAGS="-march=native -mtune=native -pipe -O2"
+declare -x CFLAGS_amd64="-m64"
+declare -x CFLAGS_default
+declare -x CFLAGS_x32="-mx32"
+declare -x CFLAGS_x86="-m32"
+declare -x CHOST="x86_64-pc-linux-gnu"
+declare -x CHOST_amd64="x86_64-pc-linux-gnu"
+declare -x CHOST_default="x86_64-pc-linux-gnu"
+declare -x CHOST_x32="x86_64-pc-linux-gnux32"
+declare -x CHOST_x86="i686-pc-linux-gnu"
+declare -x COLLECTD_PLUGINS=""
+declare -x COMMON_FLAGS="-march=native -mtune=native -O2 -pipe"
+declare -x CPPFLAGS=""
+declare -x CPU_FLAGS_ARM=""
+declare -x CPU_FLAGS_PPC=""
+declare -x CPU_FLAGS_X86=""
+declare -x CTARGET="x86_64-pc-linux-gnu"
+declare -x CTARGET_default="x86_64-pc-linux-gnu"
+declare -x CURL_SSL=""
+declare -x CXX="g++"
+declare -x CXXFLAGS="-march=native -mtune=native -pipe -O2"
+declare -- DATAPATH="/usr/share/gcc-data/x86_64-pc-linux-gnu/12"
+declare -x DEFAULT_ABI="amd64"
+declare -x DEFINED_PHASES=" compile configure install postinst postrm prepare pretend setup test unpack"
+declare DEPEND="elibc_glibc? ( sys-libs/glibc[cet(-)?] ) sys-libs/zlib
+	virtual/libiconv
+	nls? ( virtual/libintl )
+ >=dev-libs/gmp-4.3.2:0= >=dev-libs/mpfr-2.4.2:0= >=dev-libs/mpc-0.8.1:0= objc-gc? ( >=dev-libs/boehm-gc-7.4.2 ) graphite? ( >=dev-libs/isl-0.14:0= ) sanitize? ( virtual/libcrypt ) systemtap? ( dev-util/systemtap ) zstd? ( app-arch/zstd:= )"
+declare DESCRIPTION="The GNU Compiler Collection"
+declare -x DIROPTIONS="-m0755"
+declare -x EAPI="8"
+declare -- EBUILD_DEATH_HOOKS=" toolchain_death_notice"
+declare -- EGIT_BRANCH="releases/gcc-12"
+declare -x ELIBC="glibc"
+declare -x ENV_UNSET="CARGO_HOME DBUS_SESSION_BUS_ADDRESS DISPLAY GOBIN GOPATH PERL5LIB PERL5OPT PERLPREFIX PERL_CORE PERL_MB_OPT PERL_MM_OPT XAUTHORITY XDG_CACHE_HOME XDG_CONFIG_HOME XDG_DATA_HOME XDG_RUNTIME_DIR XDG_STATE_HOME"
+declare -- EPOCHREALTIME="1665815644.200754"
+declare -- EPOCHSECONDS="1665815644"
+declare -x EXEOPTIONS="-m0755"
+declare -x FCFLAGS="-march=native -mtune=native -pipe -O2"
+declare -x FETCHCOMMAND_SSH="bash -c \"x=\\\${2#ssh://} ; host=\\\${x%%/*} ; port=\\\${host##*:} ; host=\\\${host%:*} ; [[ \\\${host} = \\\${port} ]] && port= ; exec rsync --rsh=\\\"ssh \\\${port:+-p\\\${port}} \\\${3}\\\" -avP \\\"\\\${host}:/\\\${x#*/}\\\" \\\"\\\$1\\\"\" rsync \"\${DISTDIR}/\${FILE}\" \"\${URI}\" \"\${PORTAGE_SSH_OPTS}\""
+declare -x FFLAGS="-march=native -mtune=native -pipe -O2"
+declare -x FFTOOLS=""
+declare -- GCCMAJOR="12"
+declare -- GCCMICRO="1"
+declare -- GCCMINOR="2"
+declare -- GCC_BRANCH_VER="12.2"
+declare -- GCC_CONFIG_VER="12"
+declare -- GCC_PV="12.2.1_p20221008"
+declare -- GCC_PVR="12.2.1_p20221008"
+declare -- GCC_RELEASE_VER="12.2.1"
+declare -x GCJFLAGS="-march=native -mtune=native -pipe -O2"
+declare -- GMP_MPFR_DEPS=">=dev-libs/gmp-4.3.2:0= >=dev-libs/mpfr-2.4.2:0="
+declare -x GPG_VERIFY_GROUP_DROP="nogroup"
+declare -x GPG_VERIFY_USER_DROP="nobody"
+declare -x GPSD_PROTOCOLS=""
+declare -x GRUB_PLATFORMS=""
+declare -x GSETTINGS_BACKEND="dconf"
+declare HOMEPAGE="https://gcc.gnu.org/"
+declare IDEPEND=""
+declare -- INCLUDEPATH="/usr/lib/gcc/x86_64-pc-linux-gnu/12/include"
+declare -x INHERITED=" edo toolchain-funcs multilib flag-o-matic gnuconfig libtool pax-utils prefix toolchain"
+declare -x INPUT_DEVICES=""
+declare -x INSOPTIONS="-m0644"
+declare IUSE="test vanilla +nls debug +cxx +nptl +fortran doc hardened multilib objc pgo objc-gc libssp objc++ +openmp fixed-point go +sanitize graphite ada vtv jit +pie +ssp +pch systemtap d lto cet zstd valgrind custom-cflags"
+declare -x IUSE_EFFECTIVE="abi_x86_64 ada alpha amd64 amd64-linux arm arm64 arm64-macos cet custom-cflags cxx d debug doc elibc_Cygwin elibc_Darwin elibc_SunOS elibc_Winnt elibc_bionic elibc_glibc elibc_mingw elibc_musl fixed-point fortran go graphite hardened hppa ia64 jit kernel_Darwin kernel_SunOS kernel_Winnt kernel_linux libssp loong lto m68k mips multilib nls nptl objc objc++ objc-gc openmp pch pgo pie ppc ppc-macos ppc64 ppc64-linux prefix prefix-guest prefix-stack riscv s390 sanitize sparc sparc-solaris sparc64-solaris ssp systemtap test userland_BSD userland_GNU valgrind vanilla vtv x64-cygwin x64-macos x64-solaris x64-winnt x86 x86-linux x86-solaris x86-winnt zstd"
+declare -x IUSE_IMPLICIT="abi_x86_64 prefix prefix-guest prefix-stack"
+declare -x JAR="no"
+declare -x KERNEL="linux"
+declare -x KERNEL_ABI="amd64"
+declare -x KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~hppa ~ia64 ~loong ~m68k ~mips ~ppc ~ppc64 ~riscv ~s390 ~sparc ~x86"
+declare -x L10N=""
+declare -x LANG="en_US.utf8"
+declare -x LCD_DEVICES=""
+declare -x LC_COLLATE="C"
+declare -x LC_MESSAGES="C"
+declare -x LDFLAGS="-Wl,--as-needed -Wl,-z,relro,-z,now"
+declare -x LDFLAGS_amd64="-m elf_x86_64"
+declare -x LDFLAGS_default
+declare -x LDFLAGS_x32="-m elf32_x86_64"
+declare -x LDFLAGS_x86="-m elf_i386"
+declare -x LIBDIR_amd64="lib64"
+declare -x LIBDIR_default="lib"
+declare -x LIBDIR_x32="libx32"
+declare -x LIBDIR_x86="lib"
+declare -x LIBOPTIONS="-m0644"
+declare -- LIBPATH="/usr/lib/gcc/x86_64-pc-linux-gnu/12"
+declare -x LIBREOFFICE_EXTENSIONS=""
+declare -x LICENSE="GPL-3+ LGPL-3+ || ( GPL-3+ libgcc libstdc++ gcc-runtime-library-exception-3.1 ) FDL-1.3+"
+declare -x LINES="40"
+declare -x LLVM_TARGETS=""
+declare -x LUA_SINGLE_TARGET=""
+declare -x LUA_TARGETS=""
+declare -x MAIL="/var/mail/root"
+declare -x MAKEOPTS="--output-sync=line -j4"
+declare -x MANPAGER="manpager"
+declare -x MONKEYD_PLUGINS=""
+declare -x MULTILIB_ABIS="amd64 x86"
+declare -x MULTILIB_STRICT_DENY="64-bit.*shared object"
+declare -x MULTILIB_STRICT_DIRS="/lib32 /lib /usr/lib32 /usr/lib /usr/kde/*/lib32 /usr/kde/*/lib /usr/qt/*/lib32 /usr/qt/*/lib /usr/X11R6/lib32 /usr/X11R6/lib"
+declare -x MULTILIB_STRICT_EXEMPT="(perl5|gcc|binutils|eclipse-3|debug|portage|udev|systemd|clang|python-exec|llvm)"
+declare -- MUSL_GCC_VER="12.2.0"
+declare -- MUSL_VER="1"
+declare -x NGINX_MODULES_HTTP=""
+declare -x NGINX_MODULES_MAIL=""
+declare -x NGINX_MODULES_STREAM=""
+declare -x NM="gcc-nm"
+declare -x OFFICE_IMPLEMENTATION=""
+declare -x OPENMPI_FABRICS=""
+declare -x OPENMPI_OFED_FEATURES=""
+declare -x OPENMPI_RM=""
+declare -- PATCH_GCC_VER="12.2.0"
+declare -- PATCH_VER="1"
+declare -x PATH="/usr/lib/portage/python3.10/ebuild-helpers/xattr:/usr/lib/portage/python3.10/ebuild-helpers:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/bin:/usr/lib/llvm/15/bin:/usr/lib/llvm/14/bin"
+declare -- PAX_MARKINGS="none"
+declare PDEPEND=">=sys-devel/gcc-config-2.3"
+declare -x PHP_TARGETS=""
+declare -x PORTAGE_COMPRESSION_COMMAND="bzip2"
+declare -a PORTAGE_DOCOMPRESS=([0]="/usr/share/doc" [1]="/usr/share/info" [2]="/usr/share/man")
+declare -x PORTAGE_DOCOMPRESS_SIZE_LIMIT="128"
+declare -a PORTAGE_DOCOMPRESS_SKIP=([0]="/usr/share/doc/gcc-12.2.1_p20221008/html")
+declare -a PORTAGE_DOSTRIP=([0]="/")
+declare -a PORTAGE_DOSTRIP_SKIP=()
+declare -x POSTGRES_TARGETS=""
+declare -- PREFIX="/usr"
+declare -x PROFILE_ONLY_VARIABLES="ARCH ELIBC IUSE_IMPLICIT KERNEL USERLAND USE_EXPAND_IMPLICIT USE_EXPAND_UNPREFIXED USE_EXPAND_VALUES_ARCH USE_EXPAND_VALUES_ELIBC USE_EXPAND_VALUES_KERNEL USE_EXPAND_VALUES_USERLAND"
+declare -- PROPERTIES=""
+declare -x PYTHONDONTWRITEBYTECODE="1"
+declare -x PYTHON_SINGLE_TARGET=""
+declare -x PYTHON_TARGETS=""
+declare -x QEMU_SOFTMMU_TARGETS=""
+declare -x QEMU_USER_TARGETS=""
+declare -x RANLIB="gcc-ranlib"
+declare RDEPEND="elibc_glibc? ( sys-libs/glibc[cet(-)?] ) sys-libs/zlib
+	virtual/libiconv
+	nls? ( virtual/libintl )
+ >=dev-libs/gmp-4.3.2:0= >=dev-libs/mpfr-2.4.2:0= >=dev-libs/mpc-0.8.1:0= objc-gc? ( >=dev-libs/boehm-gc-7.4.2 ) graphite? ( >=dev-libs/isl-0.14:0= ) zstd? ( app-arch/zstd:= )"
+declare REPOSITORY
+declare REQUIRED_USE=""
+declare RESTRICT="test"
+declare -x RESUMECOMMAND_SSH="bash -c \"x=\\\${2#ssh://} ; host=\\\${x%%/*} ; port=\\\${host##*:} ; host=\\\${host%:*} ; [[ \\\${host} = \\\${port} ]] && port= ; exec rsync --rsh=\\\"ssh \\\${port:+-p\\\${port}} \\\${3}\\\" -avP \\\"\\\${host}:/\\\${x#*/}\\\" \\\"\\\$1\\\"\" rsync \"\${DISTDIR}/\${FILE}\" \"\${URI}\" \"\${PORTAGE_SSH_OPTS}\""
+declare -x ROS_MESSAGES=""
+declare -x RUBY_TARGETS=""
+declare -x S="/var/tmp/portage/sys-devel/gcc-12.2.1_p20221008/work/gcc-12-20221008"
+declare -x SANDBOX_DEBUG="0"
+declare -x SANDBOX_DENY=""
+declare -x SANDBOX_METHOD="any"
+declare -x SANDBOX_PREDICT="/var/tmp/portage/sys-devel/gcc-12.2.1_p20221008/homedir:/dev/crypto:/var/cache/man:/var/cache/fontconfig"
+declare -x SANDBOX_READ="/:/var/tmp/portage"
+declare -x SANDBOX_VERBOSE="1"
+declare -x SANDBOX_WRITE=":/dev/console:/dev/fd:/dev/full:/dev/null:/dev/ptmx:/dev/pts/:/dev/pty:/dev/shm:/dev/tts:/dev/tty:/dev/vc/:/dev/zero:/proc/self/fd:/tmp/:/usr/lib/cf:/usr/lib/conftest:/usr/lib32/cf:/usr/lib32/conftest:/usr/lib64/cf:/usr/lib64/conftest:/usr/tmp/:/usr/tmp/cf:/usr/tmp/conftest:/var/tmp/:/var/tmp/portage:/var/tmp/portage/sys-devel/gcc-12.2.1_p20221008/homedir/.bash_history:/dev/zero"
+declare -x SANE_BACKENDS=""
+declare -x SHELL="/bin/bash"
+declare -x SLOT="12"
+declare -- SNAPSHOT="12-20221008"
+declare -i SRANDOM="405314862"
+declare SRC_URI="https://gcc.gnu.org/pub/gcc/snapshots/12-20221008/gcc-12-20221008.tar.xz https://dev.gentoo.org/~sam/distfiles/sys-devel/gcc/gcc-12.2.0-patches-1.tar.xz https://dev.gentoo.org/~sam/distfiles/sys-devel/gcc/gcc-12.2.0-musl-patches-1.tar.xz"
+declare -- STDCXX_INCDIR="/usr/lib/gcc/x86_64-pc-linux-gnu/12/include/g++-v12"
+declare -x SUDO_COMMAND="/bin/bash"
+declare -x SUDO_GID="1000"
+declare -x SUDO_UID="1000"
+declare -x SUDO_USER="zadmin"
+declare -x SYMLINK_LIB="no"
+declare -- TARGET_ABI="amd64"
+declare -- TARGET_DEFAULT_ABI="amd64"
+declare -- TARGET_MULTILIB_ABIS="amd64 x86"
+declare -a TC_FEATURES=([0]="nptl" [1]="fortran" [2]="objc-gc" [3]="sanitize" [4]="graphite" [5]="systemtap" [6]="zstd" [7]="valgrind")
+declare -- TOOLCHAIN_PATCH_DEV="sam"
+declare -- TOOLCHAIN_PATCH_SUFFIX="xz"
+declare -- TOOLCHAIN_SET_S="yes"
+declare -x TWISTED_DISABLE_WRITING_OF_PLUGIN_CACHE="1"
+declare -x USE="abi_x86_64 amd64 cxx elibc_glibc fortran kernel_linux multilib nls nptl objc objc++ openmp pie sanitize ssp userland_GNU"
+declare -x USERLAND="GNU"
+declare -x USE_EXPAND_IMPLICIT="ARCH ELIBC KERNEL USERLAND"
+declare -x USE_EXPAND_UNPREFIXED="ARCH"
+declare -x USE_EXPAND_VALUES_ARCH="alpha amd64 amd64-linux arm arm64 arm64-macos hppa ia64 loong m68k mips ppc ppc64 ppc64-linux ppc-macos riscv s390 sparc sparc64-solaris sparc-solaris x64-cygwin x64-macos x64-solaris x64-winnt x86 x86-linux x86-solaris x86-winnt"
+declare -x USE_EXPAND_VALUES_ELIBC="bionic Cygwin Darwin glibc mingw musl SunOS Winnt"
+declare -x USE_EXPAND_VALUES_KERNEL="Darwin linux SunOS Winnt"
+declare -x USE_EXPAND_VALUES_USERLAND="BSD GNU"
+declare -x UWSGI_PLUGINS=""
+declare -x VIDEO_CARDS=""
+declare -x VOICEMAIL_STORAGE=""
+declare -x XDG_CONFIG_DIRS="/etc/xdg"
+declare -x XDG_DATA_DIRS="/usr/local/share:/usr/share"
+declare -x XTABLES_ADDONS=""
+declare -- _EDO_ECLASS="1"
+declare -x _E_DESTTREE_="/usr"
+declare -x _E_DOCDESTTREE_=""
+declare -x _E_EXEDESTTREE_=""
+declare -x _E_INSDESTTREE_=""
+declare -- _FLAG_O_MATIC_ECLASS="1"
+declare -- _GNUCONFIG_CLASS="1"
+declare -- _LIBTOOL_ECLASS="1"
+declare -- _MULTILIB_ECLASS="1"
+declare -- _PAX_UTILS_ECLASS="1"
+declare -- _PREFIX_ECLASS="1"
+declare -- _TOOLCHAIN_ECLASS="1"
+declare -- _TOOLCHAIN_FUNCS_ECLASS="1"
+declare -x ac_cv_have_x="have_x=yes ac_x_includes= ac_x_libraries="
+declare -x enable_year2038="no"
+XGCC () 
+{ 
+    get_make_var GCC_FOR_TARGET
+}
+__eapi6_src_install () 
+{ 
+    if [[ -f Makefile || -f GNUmakefile || -f makefile ]]; then
+        emake DESTDIR="${D}" install;
+    fi;
+    einstalldocs
+}
+__eapi6_src_prepare () 
+{ 
+    if ___is_indexed_array_var PATCHES; then
+        [[ ${#PATCHES[@]} -gt 0 ]] && eapply "${PATCHES[@]}";
+    else
+        if [[ -n ${PATCHES} ]]; then
+            eapply ${PATCHES};
+        fi;
+    fi;
+    eapply_user
+}
+__eapi7_ver_compare () 
+{ 
+    local va=${1} vb=${2} a an al as ar b bn bl bs br re LC_ALL=C;
+    re="^([0-9]+(\.[0-9]+)*)([a-z]?)((_(alpha|beta|pre|rc|p)[0-9]*)*)(-r[0-9]+)?$";
+    [[ ${va} =~ ${re} ]] || die "${FUNCNAME}: invalid version: ${va}";
+    an=${BASH_REMATCH[1]};
+    al=${BASH_REMATCH[3]};
+    as=${BASH_REMATCH[4]};
+    ar=${BASH_REMATCH[7]};
+    [[ ${vb} =~ ${re} ]] || die "${FUNCNAME}: invalid version: ${vb}";
+    bn=${BASH_REMATCH[1]};
+    bl=${BASH_REMATCH[3]};
+    bs=${BASH_REMATCH[4]};
+    br=${BASH_REMATCH[7]};
+    __eapi7_ver_compare_int "${an%%.*}" "${bn%%.*}" || return;
+    while [[ ${an} == *.* && ${bn} == *.* ]]; do
+        an=${an#*.};
+        bn=${bn#*.};
+        a=${an%%.*};
+        b=${bn%%.*};
+        if [[ ${a} == 0* || ${b} == 0* ]]; then
+            [[ ${a} =~ 0+$ ]] && a=${a%"${BASH_REMATCH[0]}"};
+            [[ ${b} =~ 0+$ ]] && b=${b%"${BASH_REMATCH[0]}"};
+            [[ ${a} > ${b} ]] && return 3;
+            [[ ${a} < ${b} ]] && return 1;
+        else
+            __eapi7_ver_compare_int "${a}" "${b}" || return;
+        fi;
+    done;
+    [[ ${an} == *.* ]] && return 3;
+    [[ ${bn} == *.* ]] && return 1;
+    [[ ${al} > ${bl} ]] && return 3;
+    [[ ${al} < ${bl} ]] && return 1;
+    as=${as#_}${as:+_};
+    bs=${bs#_}${bs:+_};
+    while [[ -n ${as} && -n ${bs} ]]; do
+        a=${as%%_*};
+        b=${bs%%_*};
+        if [[ ${a%%[0-9]*} == "${b%%[0-9]*}" ]]; then
+            __eapi7_ver_compare_int "${a##*[a-z]}" "${b##*[a-z]}" || return;
+        else
+            [[ ${a%%[0-9]*} == p ]] && return 3;
+            [[ ${b%%[0-9]*} == p ]] && return 1;
+            [[ ${a} > ${b} ]] && return 3 || return 1;
+        fi;
+        as=${as#*_};
+        bs=${bs#*_};
+    done;
+    if [[ -n ${as} ]]; then
+        [[ ${as} == p[_0-9]* ]] && return 3 || return 1;
+    else
+        if [[ -n ${bs} ]]; then
+            [[ ${bs} == p[_0-9]* ]] && return 1 || return 3;
+        fi;
+    fi;
+    __eapi7_ver_compare_int "${ar#-r}" "${br#-r}" || return;
+    return 2
+}
+__eapi7_ver_compare_int () 
+{ 
+    local a=$1 b=$2 d=$(( ${#1}-${#2} ));
+    if [[ ${d} -gt 0 ]]; then
+        printf -v b "%0${d}d%s" 0 "${b}";
+    else
+        if [[ ${d} -lt 0 ]]; then
+            printf -v a "%0$(( -d ))d%s" 0 "${a}";
+        fi;
+    fi;
+    [[ ${a} > ${b} ]] && return 3;
+    [[ ${a} == "${b}" ]]
+}
+__eapi7_ver_parse_range () 
+{ 
+    local range=${1};
+    local max=${2};
+    [[ ${range} == [0-9]* ]] || die "${FUNCNAME}: range must start with a number";
+    start=${range%-*};
+    [[ ${range} == *-* ]] && end=${range#*-} || end=${start};
+    if [[ -n ${end} ]]; then
+        [[ ${start} -le ${end} ]] || die "${FUNCNAME}: end of range must be >= start";
+        [[ ${end} -le ${max} ]] || end=${max};
+    else
+        end=${max};
+    fi
+}
+__eapi7_ver_split () 
+{ 
+    local v=${1} LC_ALL=C;
+    comp=();
+    local s c;
+    while [[ -n ${v} ]]; do
+        s=${v%%[a-zA-Z0-9]*};
+        v=${v:${#s}};
+        [[ ${v} == [0-9]* ]] && c=${v%%[^0-9]*} || c=${v%%[^a-zA-Z]*};
+        v=${v:${#c}};
+        comp+=("${s}" "${c}");
+    done
+}
+__eapi8_src_prepare () 
+{ 
+    local f;
+    if ___is_indexed_array_var PATCHES; then
+        [[ ${#PATCHES[@]} -gt 0 ]] && eapply -- "${PATCHES[@]}";
+    else
+        if [[ -n ${PATCHES} ]]; then
+            eapply -- ${PATCHES};
+        fi;
+    fi;
+    eapply_user
+}
+_clang_fullversion () 
+{ 
+    local ver="$1";
+    shift;
+    set -- $($(tc-getCPP "$@") -E -P - <<<"__clang_major__ __clang_minor__ __clang_patchlevel__");
+    eval echo "$ver"
+}
+_eapply_patch () 
+{ 
+    local f=${1};
+    local prefix=${2};
+    ebegin "${prefix:-Applying }${f##*/}";
+    local all_opts=(-p1 -f -g0 --no-backup-if-mismatch "${patch_options[@]}");
+    if ${patch_cmd} "${all_opts[@]}" --dry-run -s -F0 < "${f}" &> /dev/null; then
+        all_opts+=(-s -F0);
+    fi;
+    ${patch_cmd} "${all_opts[@]}" < "${f}";
+    failed=${?};
+    if ! eend "${failed}"; then
+        __helpers_die "patch -p1 ${patch_options[*]} failed with ${f}";
+    fi
+}
+_filter-hardened () 
+{ 
+    local f;
+    for f in "$@";
+    do
+        case "${f}" in 
+            -fPIC | -fpic | -fPIE | -fpie | -Wl,pie | -pie)
+                gcc-specs-pie || continue;
+                if ! is-flagq -nopie && ! is-flagq -no-pie; then
+                    if test-flags -nopie > /dev/null; then
+                        append-flags -nopie;
+                    else
+                        append-flags -no-pie;
+                    fi;
+                fi
+            ;;
+            -fstack-protector)
+                gcc-specs-ssp || continue;
+                is-flagq -fno-stack-protector || append-flags $(test-flags -fno-stack-protector)
+            ;;
+            -fstack-protector-all)
+                gcc-specs-ssp-to-all || continue;
+                is-flagq -fno-stack-protector-all || append-flags $(test-flags -fno-stack-protector-all)
+            ;;
+            -fno-strict-overflow)
+                gcc-specs-nostrict || continue;
+                is-flagq -fstrict-overflow || append-flags $(test-flags -fstrict-overflow)
+            ;;
+        esac;
+    done
+}
+_filter-var () 
+{ 
+    local f x var=$1 new=();
+    shift;
+    for f in ${!var};
+    do
+        for x in "$@";
+        do
+            [[ ${f} == ${x} ]] && continue 2;
+        done;
+        new+=("${f}");
+    done;
+    export ${var}="${new[*]}"
+}
+_gcc-install-dir () 
+{ 
+    echo "$(LC_ALL=C $(tc-getCC) -print-search-dirs 2> /dev/null |		awk '$1=="install:" {print $2}')"
+}
+_gcc-specs-directive_raw () 
+{ 
+    local cc=$(tc-getCC);
+    local specfiles=$(LC_ALL=C ${cc} -v 2>&1 | awk '$1=="Reading" {print $NF}');
+    ${cc} -dumpspecs 2> /dev/null | cat - ${specfiles} | awk -v directive=$1 'BEGIN	{ pspec=""; spec=""; outside=1 }
+$1=="*"directive":"  { pspec=spec; spec=""; outside=0; next }
+	outside || NF==0 || ( substr($1,1,1)=="*" && substr($1,length($1),1)==":" ) { outside=1; next }
+	spec=="" && substr($0,1,1)=="+" { spec=pspec " " substr($0,2); next }
+	{ spec=spec $0 }
+END	{ print spec }';
+    return 0
+}
+_gcc-specs-exists () 
+{ 
+    [[ -f $(_gcc-install-dir)/$1 ]]
+}
+_gcc_fullversion () 
+{ 
+    local ver="$1";
+    shift;
+    set -- $($(tc-getCPP "$@") -E -P - <<<"__GNUC__ __GNUC_MINOR__ __GNUC_PATCHLEVEL__");
+    eval echo "$ver"
+}
+_is_flagq () 
+{ 
+    local x var="$1[*]";
+    for x in ${!var};
+    do
+        [[ ${x} == $2 ]] && return 0;
+    done;
+    return 1
+}
+_pax_list_files () 
+{ 
+    local f cmd;
+    cmd=$1;
+    shift;
+    for f in "$@";
+    do
+        ${cmd} "     ${f}";
+    done
+}
+_setup-allowed-flags () 
+{ 
+    ALLOWED_FLAGS=(-pipe -O '-O[12sg]' '-mcpu=*' '-march=*' '-mtune=*' '-fstack-protector*' '-fstack-check*' -fno-stack-check -fstack-clash-protection '-fcf-protection=*' -fbounds-check -fbounds-checking -fno-PIE -fno-pie -nopie -no-pie '-mindirect-branch=*' -mindirect-branch-register '-mfunction-return=*' -mretpoline -fno-unit-at-a-time -fno-strict-overflow '-fsanitize*' '-fno-sanitize*' -g '-g[0-9]' -ggdb '-ggdb[0-9]' -gdwarf '-gdwarf-*' -gstabs -gstabs+ -gz -glldb -fno-diagnostics-color '-fmessage-length=*' -fno-ident -fpermissive -frecord-gcc-switches -frecord-command-line '-fdiagnostics*' '-fplugin*' '-W*' -w '-[DUILR]*' '-Wl,*' '-fuse-ld=*');
+    ALLOWED_FLAGS+=('-fno-stack-protector*' '-fabi-version=*' -fno-strict-aliasing -fno-bounds-check -fno-bounds-checking -fstrict-overflow -fno-omit-frame-pointer '-fno-builtin*');
+    ALLOWED_FLAGS+=('-mregparm=*' -mno-app-regs -mapp-regs -mno-mmx -mno-sse -mno-sse2 -mno-sse3 -mno-ssse3 -mno-sse4 -mno-sse4.1 -mno-sse4.2 -mno-avx -mno-aes -mno-pclmul -mno-sse4a -mno-3dnow -mno-popcnt -mno-abm -mips1 -mips2 -mips3 -mips4 -mips32 -mips64 -mips16 -mplt -msoft-float -mno-soft-float -mhard-float -mno-hard-float '-mfpu=*' -mieee -mieee-with-inexact '-mschedule=*' -mfloat-gprs -mspe -mno-spe -mtls-direct-seg-refs -mno-tls-direct-seg-refs -mflat -mno-flat -mno-faster-structs -mfaster-structs -m32 -m64 -mx32 '-mabi=*' -mlittle-endian -mbig-endian -EL -EB -fPIC -mlive-g0 '-mcmodel=*' -mstack-bias -mno-stack-bias -msecure-plt '-m*-toc' '-mfloat-abi=*' -mfix-r4000 -mno-fix-r4000 -mfix-r4400 -mno-fix-r4400 -mfix-rm7000 -mno-fix-rm7000 -mfix-r10000 -mno-fix-r10000 '-mr10k-cache-barrier=*' -mthumb -marm -ffixed-x18 -mno-fma4 -mno-movbe -mno-xop -mno-lwp -mno-fsgsbase -mno-rdrnd -mno-f16c -mno-bmi -mno-tbm -mno-avx2 -mno-bmi2 -mno-fma -mno-lzcnt -mno-fxsr -mno-hle -mno-rtm -mno-xsave -mno-xsaveopt -mno-avx512cd -mno-avx512er -mno-avx512f -mno-avx512pf -mno-sha);
+    ALLOWED_FLAGS+=(-mstackrealign)
+}
+_tc-getPROG () 
+{ 
+    local tuple=$1;
+    local v var vars=$2;
+    local prog=($3);
+    var=${vars%% *};
+    for v in ${vars};
+    do
+        if [[ -n ${!v} ]]; then
+            export ${var}="${!v}";
+            echo "${!v}";
+            return 0;
+        fi;
+    done;
+    local search=;
+    [[ -n $4 ]] && search=$(type -p $4-${prog[0]});
+    [[ -z ${search} && -n ${!tuple} ]] && search=$(type -p ${!tuple}-${prog[0]});
+    [[ -n ${search} ]] && prog[0]=${search##*/};
+    export ${var}="${prog[*]}";
+    echo "${!var}"
+}
+_tc-has-openmp () 
+{ 
+    local base="${T}/test-tc-openmp";
+    cat <<-EOF > "${base}.c"
+#include <omp.h>
+int main() {
+int nthreads, tid, ret = 0;
+#pragma omp parallel private(nthreads, tid)
+{
+tid = omp_get_thread_num();
+nthreads = omp_get_num_threads(); ret += tid + nthreads;
+}
+return ret;
+}
+EOF
+
+    $(tc-getCC "$@") -fopenmp "${base}.c" -o "${base}" &> /dev/null;
+    local ret=$?;
+    rm -f "${base}"*;
+    return ${ret}
+}
+_tc_use_if_iuse () 
+{ 
+    in_iuse $1 && use $1
+}
+_test-compile-PROG () 
+{ 
+    local lang=$1;
+    local code=$2;
+    shift 2;
+    [[ -z "${lang}" ]] && return 1;
+    [[ -z "${code}" ]] && return 1;
+    local compiler filename_in filename_out args=() libs=();
+    case "${lang}" in 
+        c)
+            compiler="$(tc-getCC)";
+            filename_in="${T}/test.c";
+            filename_out="${T}/test.o";
+            args+=(${CFLAGS[@]} -xc -c)
+        ;;
+        c++)
+            compiler="$(tc-getCXX)";
+            filename_in="${T}/test.cc";
+            filename_out="${T}/test.o";
+            args+=(${CXXFLAGS[@]} -xc++ -c)
+        ;;
+        f77)
+            compiler="$(tc-getF77)";
+            filename_in="${T}/test.f";
+            filename_out="${T}/test.o";
+            args+=(${FFFLAGS[@]} -xf77 -c)
+        ;;
+        f95)
+            compiler="$(tc-getFC)";
+            filename_in="${T}/test.f90";
+            filename_out="${T}/test.o";
+            args+=(${FCFLAGS[@]} -xf95 -c)
+        ;;
+        c+ld)
+            compiler="$(tc-getCC)";
+            filename_in="${T}/test.c";
+            filename_out="${T}/test.exe";
+            args+=(${CFLAGS[@]} ${LDFLAGS[@]} -xc);
+            libs+=(${LIBS[@]})
+        ;;
+        c+++ld)
+            compiler="$(tc-getCXX)";
+            filename_in="${T}/test.cc";
+            filename_out="${T}/test.exe";
+            args+=(${CXXFLAGS[@]} ${LDFLAGS[@]} -xc++);
+            libs+=(${LIBS[@]})
+        ;;
+        f77+ld)
+            compiler="$(tc-getF77)";
+            filename_in="${T}/test.f";
+            filename_out="${T}/test.exe";
+            args+=(${FFLAGS[@]} ${LDFLAGS[@]} -xf77);
+            libs+=(${LIBS[@]})
+        ;;
+        f95+ld)
+            compiler="$(tc-getFC)";
+            filename_in="${T}/test.f90";
+            filename_out="${T}/test.exe";
+            args+=(${FCFLAGS[@]} ${LDFLAGS[@]} -xf95);
+            libs+=(${LIBS[@]})
+        ;;
+        *)
+            die "Unknown compiled language ${lang}"
+        ;;
+    esac;
+    printf "%s\n" "${code}" > "${filename_in}" || die "Failed to create '${test_in}'";
+    "${compiler}" ${args[@]} "${filename_in}" -o "${filename_out}" ${libs[@]} &> /dev/null
+}
+_test-flag-PROG () 
+{ 
+    local comp=$1;
+    local lang=$2;
+    shift 2;
+    if [[ -z ${comp} ]]; then
+        return 1;
+    fi;
+    if [[ -z $1 ]]; then
+        return 1;
+    fi;
+    comp=($(tc-get${comp}));
+    if ! type -p ${comp[0]} > /dev/null; then
+        return 1;
+    fi;
+    local in_src in_ext cmdline_extra=();
+    case "${lang}" in 
+        c)
+            in_ext='c';
+            in_src='int main(void) { return 0; }';
+            cmdline_extra+=(-xc -c)
+        ;;
+        c++)
+            in_ext='cc';
+            in_src='int main(void) { return 0; }';
+            cmdline_extra+=(-xc++ -c)
+        ;;
+        f77)
+            in_ext='f';
+            in_src='      end';
+            cmdline_extra+=(-xf77 -c)
+        ;;
+        f95)
+            in_ext='f90';
+            in_src='end';
+            cmdline_extra+=(-xf95 -c)
+        ;;
+        c+ld)
+            in_ext='c';
+            in_src='int main(void) { return 0; }';
+            if is-ldflagq -fuse-ld=*; then
+                fuse_ld_value=$(get-flag -fuse-ld=*);
+                cmdline_extra+=(${fuse_ld_value});
+            fi;
+            cmdline_extra+=(-xc)
+        ;;
+    esac;
+    local test_in=${T}/test-flag.${in_ext};
+    local test_out=${T}/test-flag.exe;
+    printf "%s\n" "${in_src}" > "${test_in}" || die "Failed to create '${test_in}'";
+    local cmdline=("${comp[@]}" -Werror "$@" "${cmdline_extra[@]}" "${test_in}" -o "${test_out}");
+    "${cmdline[@]}" &> /dev/null
+}
+_test-flags-PROG () 
+{ 
+    local comp=$1;
+    local flags=();
+    local x;
+    shift;
+    [[ -z ${comp} ]] && return 1;
+    while (( $# )); do
+        case "$1" in 
+            --param | -B)
+                if test-flag-${comp} "$1" "$2"; then
+                    flags+=("$1" "$2");
+                fi;
+                shift 2
+            ;;
+            *)
+                if test-flag-${comp} "$1"; then
+                    flags+=("$1");
+                fi;
+                shift 1
+            ;;
+        esac;
+    done;
+    echo "${flags[*]}";
+    [[ ${#flags[@]} -gt 0 ]]
+}
+all-flag-vars () 
+{ 
+    echo {ADA,C,CPP,CXX,CCAS,F,FC,LD}FLAGS
+}
+append-atomic-flags () 
+{ 
+    local code;
+    read -r -d '' code <<-EOF
+int main()
+{
+return 0;
+}
+EOF
+
+    _test-compile-PROG "c+ld" "${code}" || return;
+    local bytesizes;
+    [[ "${#}" == "0" ]] && bytesizes=("1" "2" "4" "8") || bytesizes="${@}";
+    for bytesize in ${bytesizes[@]};
+    do
+        read -r -d '' code <<-EOF
+#include <stdint.h>
+int main()
+{
+uint$((${bytesize} * 8))_t a = 0;
+__atomic_add_fetch(&a, 3, __ATOMIC_RELAXED);
+__atomic_compare_exchange_n(&a, &a, 2, 1, __ATOMIC_RELAXED, __ATOMIC_RELAXED);
+return 0;
+}
+EOF
+
+        _test-compile-PROG "c+ld" "${code}" && continue
+        test-flags-CCLD "-latomic" &> /dev/null || die "-latomic is required but not supported by $(tc-getCC)";
+        append-libs "-latomic";
+        _test-compile-PROG "c+ld" "${code}" || die "libatomic does not include an implementation of ${bytesize}-byte atomics for this toolchain";
+        return;
+    done
+}
+append-cflags () 
+{ 
+    [[ $# -eq 0 ]] && return 0;
+    export CFLAGS+=" $*";
+    return 0
+}
+append-cppflags () 
+{ 
+    [[ $# -eq 0 ]] && return 0;
+    export CPPFLAGS+=" $*";
+    return 0
+}
+append-cxxflags () 
+{ 
+    [[ $# -eq 0 ]] && return 0;
+    export CXXFLAGS+=" $*";
+    return 0
+}
+append-fflags () 
+{ 
+    [[ $# -eq 0 ]] && return 0;
+    export FFLAGS+=" $*";
+    export FCFLAGS+=" $*";
+    return 0
+}
+append-flags () 
+{ 
+    [[ $# -eq 0 ]] && return 0;
+    case " $* " in 
+        *' '-[DIU]*)
+            eqawarn 'Please use append-cppflags for preprocessor flags'
+        ;;
+        *' '-L* | *' '-Wl,*)
+            eqawarn 'Please use append-ldflags for linker flags'
+        ;;
+    esac;
+    append-cflags "$@";
+    append-cxxflags "$@";
+    append-fflags "$@";
+    return 0
+}
+append-ldflags () 
+{ 
+    [[ $# -eq 0 ]] && return 0;
+    local flag;
+    for flag in "$@";
+    do
+        [[ ${flag} == -l* ]] && eqawarn "Appending a library link instruction (${flag}); libraries to link to should not be passed through LDFLAGS";
+    done;
+    export LDFLAGS="${LDFLAGS} $*";
+    return 0
+}
+append-lfs-flags () 
+{ 
+    [[ $# -ne 0 ]] && die "append-lfs-flags takes no arguments";
+    append-cppflags -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE
+}
+append-libs () 
+{ 
+    [[ $# -eq 0 ]] && return 0;
+    local flag;
+    for flag in "$@";
+    do
+        if [[ -z "${flag// }" ]]; then
+            eqawarn "Appending an empty argument to LIBS is invalid! Skipping.";
+            continue;
+        fi;
+        case $flag in 
+            -[lL]*)
+                export LIBS="${LIBS} ${flag}"
+            ;;
+            -*)
+                eqawarn "Appending non-library to LIBS (${flag}); Other linker flags should be passed via LDFLAGS";
+                export LIBS="${LIBS} ${flag}"
+            ;;
+            *)
+                export LIBS="${LIBS} -l${flag}"
+            ;;
+        esac;
+    done;
+    return 0
+}
+clang-fullversion () 
+{ 
+    _clang_fullversion '$1.$2.$3' "$@"
+}
+clang-major-version () 
+{ 
+    _clang_fullversion '$1' "$@"
+}
+clang-micro-version () 
+{ 
+    _clang_fullversion '$3' "$@"
+}
+clang-minor-version () 
+{ 
+    _clang_fullversion '$2' "$@"
+}
+clang-version () 
+{ 
+    _clang_fullversion '$1.$2' "$@"
+}
+copy_minispecs_gcc_specs () 
+{ 
+    if tc_version_is_at_least 6.0; then
+        return 0;
+    fi;
+    if hardened_gcc_works; then
+        create_gcc_env_entry hardenednopiessp;
+    fi;
+    if hardened_gcc_works pie; then
+        create_gcc_env_entry hardenednopie;
+    fi;
+    if hardened_gcc_works ssp; then
+        create_gcc_env_entry hardenednossp;
+    fi;
+    create_gcc_env_entry vanilla;
+    insinto ${LIBPATH#${EPREFIX}};
+    doins "${WORKDIR}"/specs/*.specs || die "failed to install specs";
+    if ! tc_version_is_at_least 4.4; then
+        $(XGCC) -dumpspecs > "${WORKDIR}"/specs/specs;
+        cat "${WORKDIR}"/build.specs >> "${WORKDIR}"/specs/specs;
+        doins "${WORKDIR}"/specs/specs || die "failed to install the specs file";
+    fi
+}
+create_gcc_env_entry () 
+{ 
+    dodir /etc/env.d/gcc;
+    local gcc_envd_base="/etc/env.d/gcc/${CTARGET}-${GCC_CONFIG_VER}";
+    local gcc_specs_file;
+    local gcc_envd_file="${ED}${gcc_envd_base}";
+    if [[ -z $1 ]]; then
+        gcc_specs_file="";
+    else
+        gcc_envd_file+="-$1";
+        gcc_specs_file="${LIBPATH}/$1.specs";
+    fi;
+    local ldpaths mosdirs;
+    local mdir mosdir abi ldpath;
+    for abi in $(get_all_abis TARGET);
+    do
+        mdir=$($(XGCC) $(get_abi_CFLAGS ${abi}) --print-multi-directory);
+        ldpath=${LIBPATH};
+        [[ ${mdir} != "." ]] && ldpath+="/${mdir}";
+        ldpaths="${ldpath}${ldpaths:+:${ldpaths}}";
+        mosdir=$($(XGCC) $(get_abi_CFLAGS ${abi}) -print-multi-os-directory);
+        mosdirs="${mosdir}${mosdirs:+:${mosdirs}}";
+    done;
+    cat <<-EOF > ${gcc_envd_file}
+GCC_PATH="${BINPATH}"
+LDPATH="${ldpaths}"
+MANPATH="${DATAPATH}/man"
+INFOPATH="${DATAPATH}/info"
+STDCXX_INCDIR="${STDCXX_INCDIR##*/}"
+CTARGET="${CTARGET}"
+GCC_SPECS="${gcc_specs_file}"
+MULTIOSDIRS="${mosdirs}"
+EOF
+
+}
+create_revdep_rebuild_entry () 
+{ 
+    local revdep_rebuild_base="/etc/revdep-rebuild/05cross-${CTARGET}-${GCC_CONFIG_VER}";
+    local revdep_rebuild_file="${ED}${revdep_rebuild_base}";
+    is_crosscompile || return 0;
+    dodir /etc/revdep-rebuild;
+    cat <<-EOF > "${revdep_rebuild_file}"
+# Generated by ${CATEGORY}/${PF}
+# Ignore libraries built for ${CTARGET}, https://bugs.gentoo.org/692844.
+SEARCH_DIRS_MASK="${LIBPATH}"
+EOF
+
+}
+do_gcc_CYGWINPORTS_patches () 
+{ 
+    [[ -n ${CYGWINPORTS_GITREV} ]] || return 0;
+    use elibc_Cygwin || return 0;
+    local p d="${WORKDIR}/gcc-${CYGWINPORTS_GITREV}";
+    local patches=($(
+		for p in $(
+			sed -e '1,/PATCH_URI="/d;/"/,$d' < "${d}"/gcc.cygport
+		); do
+			echo "${d}/${p}"
+		done
+	));
+    einfo "Applying cygwin port patches ...";
+    eapply -- "${patches[@]}"
+}
+do_gcc_PIE_patches () 
+{ 
+    want_pie || return 0;
+    use vanilla && return 0;
+    einfo "Applying PIE patches ...";
+    eapply "${WORKDIR}"/piepatch/*.patch;
+    BRANDING_GCC_PKGVERSION="${BRANDING_GCC_PKGVERSION}, pie-${PIE_VER}"
+}
+do_gcc_config () 
+{ 
+    if ! should_we_gcc_config; then
+        gcc-config --use-old --force;
+        return 0;
+    fi;
+    local current_gcc_config target;
+    current_gcc_config=$(gcc-config -c ${CTARGET} 2>/dev/null);
+    if [[ -n ${current_gcc_config} ]]; then
+        local current_specs use_specs;
+        current_specs=$(gcc-config -S ${current_gcc_config} | awk '{print $3}');
+        [[ -n ${current_specs} ]] && use_specs=-${current_specs};
+        if [[ -n ${use_specs} ]] && [[ ! -e ${EROOT}/etc/env.d/gcc/${CTARGET}-${GCC_CONFIG_VER}${use_specs} ]]; then
+            ewarn "The currently selected specs-specific gcc config,";
+            ewarn "${current_specs}, doesn't exist anymore. This is usually";
+            ewarn "due to enabling/disabling hardened or switching to a version";
+            ewarn "of gcc that doesnt create multiple specs files. The default";
+            ewarn "config will be used, and the previous preference forgotten.";
+            use_specs="";
+        fi;
+        target="${CTARGET}-${GCC_CONFIG_VER}${use_specs}";
+    else
+        target=$(gcc-config -l 2>/dev/null | grep " ${CTARGET}-[0-9]" | tail -1 | awk '{print $2}');
+    fi;
+    gcc-config "${target}"
+}
+do_gcc_gentoo_patches () 
+{ 
+    if ! use vanilla; then
+        if [[ -n ${PATCH_VER} || -d "${WORKDIR}"/patch ]]; then
+            einfo "Applying Gentoo patches ...";
+            eapply "${WORKDIR}"/patch/*.patch;
+            BRANDING_GCC_PKGVERSION="${BRANDING_GCC_PKGVERSION} p${PATCH_VER}";
+        fi;
+        if [[ -n ${MUSL_VER} || -d "${WORKDIR}"/musl ]] && [[ ${CTARGET} == *musl* ]]; then
+            if [[ ${CATEGORY} == cross-* ]]; then
+                if [[ -d "${WORKDIR}"/musl/nocross ]]; then
+                    rm -fv "${WORKDIR}"/musl/nocross/*.patch || die;
+                else
+                    mkdir -p "${WORKDIR}"/musl/nocross || die;
+                fi;
+            fi;
+            local shopt_save=$(shopt -p nullglob);
+            shopt -s nullglob;
+            einfo "Applying musl patches ...";
+            eapply "${WORKDIR}"/musl/{,nocross/}*.patch;
+            ${shopt_save};
+        fi;
+    fi
+}
+downgrade_arch_flags () 
+{ 
+    local arch bver i isa myarch mytune rep ver;
+    bver=${1:-${GCC_BRANCH_VER}};
+    tc_version_is_at_least ${bver} $(gcc-version) || return 0;
+    [[ $(tc-arch) != amd64 && $(tc-arch) != x86 ]] && return 0;
+    myarch=$(get-flag march);
+    mytune=$(get-flag mtune);
+    [[ ${mytune} == intel ]] && ! tc_version_is_at_least 4.9 ${bver} && replace-cpu-flags intel generic;
+    [[ ${mytune} == x86-64 ]] && filter-flags '-mtune=*';
+    local archlist=(10 znver3 znver2 9 znver2 znver1 4.9 bdver4 bdver3 4.9 bonnell atom 4.9 broadwell core-avx2 4.9 haswell core-avx2 4.9 ivybridge core-avx-i 4.9 nehalem corei7 4.9 sandybridge corei7-avx 4.9 silvermont corei7 4.9 westmere corei7 4.8 bdver3 bdver2 4.8 btver2 btver1 4.7 bdver2 bdver1 4.7 core-avx2 core-avx-i 4.6 bdver1 amdfam10 4.6 btver1 amdfam10 4.6 core-avx-i core2 4.6 corei7 core2 4.6 corei7-avx core2 4.5 atom core2 4.3 amdfam10 k8 4.3 athlon64-sse3 k8 4.3 barcelona k8 4.3 core2 nocona 4.3 geode k6-2 4.3 k8-sse3 k8 4.3 opteron-sse3 k8);
+    for ((i = 0; i < ${#archlist[@]}; i += 3))
+    do
+        myarch=$(get-flag march);
+        mytune=$(get-flag mtune);
+        ver=${archlist[i]};
+        arch=${archlist[i + 1]};
+        rep=${archlist[i + 2]};
+        [[ ${myarch} != ${arch} && ${mytune} != ${arch} ]] && continue;
+        if ! tc_version_is_at_least ${ver} ${bver}; then
+            einfo "Downgrading '${myarch}' (added in gcc ${ver}) with '${rep}'...";
+            [[ ${myarch} == ${arch} ]] && replace-cpu-flags ${myarch} ${rep};
+            [[ ${mytune} == ${arch} ]] && replace-cpu-flags ${mytune} ${rep};
+            continue;
+        else
+            break;
+        fi;
+    done;
+    local isalist=(4.9 -mno-sha 4.9 -mno-avx512pf 4.9 -mno-avx512f 4.9 -mno-avx512er 4.9 -mno-avx512cd 4.8 -mno-xsaveopt 4.8 -mno-xsave 4.8 -mno-rtm 4.8 -mno-fxsr 4.7 -mno-lzcnt 4.7 -mno-bmi2 4.7 -mno-avx2 4.6 -mno-tbm 4.6 -mno-rdrnd 4.6 -mno-fsgsbase 4.6 -mno-f16c 4.6 -mno-bmi 4.5 -mno-xop 4.5 -mno-movbe 4.5 -mno-lwp 4.5 -mno-fma4 4.4 -mno-pclmul 4.4 -mno-fma 4.4 -mno-avx 4.4 -mno-aes 4.3 -mno-ssse3 4.3 -mno-sse4a 4.3 -mno-sse4 4.3 -mno-sse4.2 4.3 -mno-sse4.1 4.3 -mno-popcnt 4.3 -mno-abm);
+    for ((i = 0; i < ${#isalist[@]}; i += 2))
+    do
+        ver=${isalist[i]};
+        isa=${isalist[i + 1]};
+        tc_version_is_at_least ${ver} ${bver} || filter-flags ${isa} ${isa/-m/-mno-};
+    done
+}
+eapply () 
+{ 
+    local failed patch_cmd=patch;
+    local -x LC_COLLATE=POSIX;
+    type -P gpatch > /dev/null && patch_cmd=gpatch;
+    function _eapply_patch () 
+    { 
+        local f=${1};
+        local prefix=${2};
+        ebegin "${prefix:-Applying }${f##*/}";
+        local all_opts=(-p1 -f -g0 --no-backup-if-mismatch "${patch_options[@]}");
+        if ${patch_cmd} "${all_opts[@]}" --dry-run -s -F0 < "${f}" &> /dev/null; then
+            all_opts+=(-s -F0);
+        fi;
+        ${patch_cmd} "${all_opts[@]}" < "${f}";
+        failed=${?};
+        if ! eend "${failed}"; then
+            __helpers_die "patch -p1 ${patch_options[*]} failed with ${f}";
+        fi
+    };
+    local patch_options=() files=();
+    local i found_doublehyphen;
+    for ((i = 1; i <= ${#@}; ++i ))
+    do
+        if [[ ${@:i:1} == -- ]]; then
+            patch_options=("${@:1:i-1}");
+            files=("${@:i+1}");
+            found_doublehyphen=1;
+            break;
+        fi;
+    done;
+    if [[ -z ${found_doublehyphen} ]]; then
+        for ((i = 1; i <= ${#@}; ++i ))
+        do
+            if [[ ${@:i:1} != -* ]]; then
+                patch_options=("${@:1:i-1}");
+                files=("${@:i}");
+                break;
+            fi;
+        done;
+        for i in "${files[@]}";
+        do
+            if [[ ${i} == -* ]]; then
+                die "eapply: all options must be passed before non-options";
+            fi;
+        done;
+    fi;
+    if [[ ${#files[@]} -eq 0 ]]; then
+        die "eapply: no files specified";
+    fi;
+    local f;
+    for f in "${files[@]}";
+    do
+        if [[ -d ${f} ]]; then
+            function _eapply_get_files () 
+            { 
+                local LC_ALL=POSIX;
+                local prev_shopt=$(shopt -p nullglob);
+                shopt -s nullglob;
+                local f;
+                for f in "${1}"/*;
+                do
+                    if [[ ${f} == *.diff || ${f} == *.patch ]]; then
+                        files+=("${f}");
+                    fi;
+                done;
+                ${prev_shopt}
+            };
+            local files=();
+            _eapply_get_files "${f}";
+            [[ ${#files[@]} -eq 0 ]] && die "No *.{patch,diff} files in directory ${f}";
+            einfo "Applying patches from ${f} ...";
+            local f2;
+            for f2 in "${files[@]}";
+            do
+                _eapply_patch "${f2}" '  ';
+                [[ ${failed} -ne 0 ]] && return "${failed}";
+            done;
+        else
+            _eapply_patch "${f}";
+            [[ ${failed} -ne 0 ]] && return "${failed}";
+        fi;
+    done;
+    return 0
+}
+eapply_user () 
+{ 
+    [[ ${EBUILD_PHASE} == prepare ]] || die "eapply_user() called during invalid phase: ${EBUILD_PHASE}";
+    local tagfile=${T}/.portage_user_patches_applied;
+    [[ -f ${tagfile} ]] && return;
+     >> "${tagfile}";
+    local basedir=${PORTAGE_CONFIGROOT%/}/etc/portage/patches;
+    local columns=${COLUMNS:-0};
+    [[ ${columns} == 0 ]] && columns=$(set -- $( ( stty size </dev/tty ) 2>/dev/null || echo 24 80 ) ; echo $2);
+    (( columns > 0 )) || (( columns = 80 ));
+    local applied d f;
+    local -A _eapply_user_patches;
+    local prev_shopt=$(shopt -p nullglob);
+    shopt -s nullglob;
+    for d in "${basedir}"/${CATEGORY}/{${P}-${PR},${P},${PN}}{:${SLOT%/*},};
+    do
+        for f in "${d}"/*;
+        do
+            if [[ ( ${f} == *.diff || ${f} == *.patch ) && -z ${_eapply_user_patches[${f##*/}]} ]]; then
+                _eapply_user_patches[${f##*/}]=${f};
+            fi;
+        done;
+    done;
+    if [[ ${#_eapply_user_patches[@]} -gt 0 ]]; then
+        while read -r -d '' f; do
+            f=${_eapply_user_patches[${f}]};
+            if [[ -s ${f} ]]; then
+                if [[ -z ${applied} ]]; then
+                    einfo "${PORTAGE_COLOR_INFO}$(for ((column = 0; column < ${columns} - 3; column++)); do echo -n =; done)${PORTAGE_COLOR_NORMAL}";
+                    einfo "Applying user patches from ${basedir} ...";
+                fi;
+                eapply "${f}";
+                applied=1;
+            fi;
+        done < <(printf -- '%s\0' "${!_eapply_user_patches[@]}" |
+				LC_ALL=C sort -z);
+    fi;
+    ${prev_shopt};
+    if [[ -n ${applied} ]]; then
+        einfo "User patches applied.";
+        einfo "${PORTAGE_COLOR_INFO}$(for ((column = 0; column < ${columns} - 3; column++)); do echo -n =; done)${PORTAGE_COLOR_NORMAL}";
+    fi
+}
+econf_build () 
+{ 
+    local CBUILD=${CBUILD:-${CHOST}};
+    tc-env_build econf --build=${CBUILD} --host=${CBUILD} "$@"
+}
+edo () 
+{ 
+    einfo "$@";
+    "$@" || die -n "Failed to run command: $@"
+}
+edob () 
+{ 
+    ebegin "Running $@";
+    "$@";
+    eend $? || die -n "Failed to run command: $@"
+}
+einstalldocs () 
+{ 
+    ( if [[ $(declare -p DOCS 2>/dev/null) != *=* ]]; then
+        local d;
+        for d in README* ChangeLog AUTHORS NEWS TODO CHANGES THANKS BUGS FAQ CREDITS CHANGELOG;
+        do
+            [[ -f ${d} && -s ${d} ]] && docinto / && dodoc "${d}";
+        done;
+    else
+        if ___is_indexed_array_var DOCS; then
+            [[ ${#DOCS[@]} -gt 0 ]] && docinto / && dodoc -r "${DOCS[@]}";
+        else
+            [[ -n ${DOCS} ]] && docinto / && dodoc -r ${DOCS};
+        fi;
+    fi );
+    ( if ___is_indexed_array_var HTML_DOCS; then
+        [[ ${#HTML_DOCS[@]} -gt 0 ]] && docinto html && dodoc -r "${HTML_DOCS[@]}";
+    else
+        [[ -n ${HTML_DOCS} ]] && docinto html && dodoc -r ${HTML_DOCS};
+    fi )
+}
+elibtoolize () 
+{ 
+    type -P eltpatch &> /dev/null || die "eltpatch not found; is app-portage/elt-patches installed?";
+    ELT_LOGDIR=${T} LD=$(tc-getLD) eltpatch "${@}" || die "eltpatch failed"
+}
+eprefixify () 
+{ 
+    [[ $# -lt 1 ]] && die "at least one argument required";
+    einfo "Adjusting to prefix ${EPREFIX:-/}";
+    local x;
+    for x in "$@";
+    do
+        if [[ -e ${x} ]]; then
+            ebegin "  ${x##*/}";
+            sed -i -e "s|@GENTOO_PORTAGE_EPREFIX@|${EPREFIX}|g" "${x}";
+            eend $? || die "failed to eprefixify ${x}";
+        else
+            die "${x} does not exist";
+        fi;
+    done;
+    return 0
+}
+filter-flags () 
+{ 
+    _filter-hardened "$@";
+    local v;
+    for v in $(all-flag-vars);
+    do
+        _filter-var ${v} "$@";
+    done;
+    return 0
+}
+filter-ldflags () 
+{ 
+    _filter-var LDFLAGS "$@";
+    return 0
+}
+filter-lfs-flags () 
+{ 
+    [[ $# -ne 0 ]] && die "filter-lfs-flags takes no arguments";
+    filter-flags -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_TIME_BITS=64
+}
+filter-lto () 
+{ 
+    [[ $# -ne 0 ]] && die "filter-lto takes no arguments";
+    filter-flags '-flto*' -fwhole-program-vtables '-fsanitize=cfi*'
+}
+filter-mfpmath () 
+{ 
+    local orig_mfpmath new_math prune_math;
+    orig_mfpmath=$(get-flag -mfpmath);
+    new_math=$(get-flag mfpmath);
+    new_math=${new_math/both/387,sse};
+    new_math=" ${new_math//[,+]/ } ";
+    prune_math="";
+    for prune_math in "$@";
+    do
+        new_math=${new_math/ ${prune_math} / };
+    done;
+    new_math=$(echo ${new_math});
+    new_math=${new_math// /,};
+    if [[ -z ${new_math} ]]; then
+        filter-flags ${orig_mfpmath};
+    else
+        replace-flags ${orig_mfpmath} -mfpmath=${new_math};
+    fi;
+    return 0
+}
+fix_libtool_libdir_paths () 
+{ 
+    local libpath="$1";
+    pushd "${D}" > /dev/null || die;
+    pushd "./${libpath}" > /dev/null || die;
+    local dir="${PWD#${D%/}}";
+    local allarchives=$(echo *.la);
+    allarchives="\(${allarchives// /\\|}\)";
+    popd > /dev/null || die;
+    find "./${dir}" -maxdepth 1 -name '*.la' -exec sed -i -e "/^libdir=/s:=.*:='${dir}':" {} + || die;
+    find "./${PREFIX}"/lib* -maxdepth 3 -name '*.la' -exec sed -i -e "/^dependency_libs=/s:/[^ ]*/${allarchives}:${libpath}/\1:g" {} + || die;
+    find "./${dir}/" -maxdepth 1 -name '*.la' -exec sed -i -e "/^dependency_libs=/s:/[^ ]*/${allarchives}:${libpath}/\1:g" {} + || die;
+    popd > /dev/null || die
+}
+gcc-abi-map () 
+{ 
+    local map=();
+    case ${CTARGET} in 
+        mips*)
+            map=("o32 32" "n32 n32" "n64 64")
+        ;;
+        riscv*)
+            map=("lp64d lp64d" "lp64 lp64" "ilp32d ilp32d" "ilp32 ilp32")
+        ;;
+        x86_64*)
+            map=("amd64 m64" "x86 m32" "x32 mx32")
+        ;;
+    esac;
+    local m;
+    for m in "${map[@]}";
+    do
+        l=(${m});
+        [[ $1 == ${l[0]} ]] && echo ${l[1]} && break;
+    done
+}
+gcc-fullversion () 
+{ 
+    _gcc_fullversion '$1.$2.$3' "$@"
+}
+gcc-lang-supported () 
+{ 
+    grep ^language=\"${1}\" "${S}"/gcc/*/config-lang.in > /dev/null || return 1;
+    [[ -z ${TOOLCHAIN_ALLOWED_LANGS} ]] && return 0;
+    has $1 ${TOOLCHAIN_ALLOWED_LANGS}
+}
+gcc-major-version () 
+{ 
+    _gcc_fullversion '$1' "$@"
+}
+gcc-micro-version () 
+{ 
+    _gcc_fullversion '$3' "$@"
+}
+gcc-minor-version () 
+{ 
+    _gcc_fullversion '$2' "$@"
+}
+gcc-multilib-configure () 
+{ 
+    if ! is_multilib; then
+        confgcc+=(--disable-multilib);
+    else
+        confgcc+=(--enable-multilib);
+    fi;
+    local abi list;
+    for abi in $(get_all_abis TARGET);
+    do
+        local l=$(gcc-abi-map ${abi});
+        [[ -n ${l} ]] && list+=",${l}";
+    done;
+    if [[ -n ${list} ]]; then
+        case ${CTARGET} in 
+            x86_64*)
+                tc_version_is_at_least 4.8 && confgcc+=(--with-multilib-list=${list:1})
+            ;;
+        esac;
+    fi
+}
+gcc-specs-directive () 
+{ 
+    local directive subdname subdirective;
+    directive="$(_gcc-specs-directive_raw $1)";
+    while [[ ${directive} == *%\(*\)* ]]; do
+        subdname=${directive/*%\(};
+        subdname=${subdname/\)*};
+        subdirective="$(_gcc-specs-directive_raw ${subdname})";
+        directive="${directive//\%(${subdname})/${subdirective}}";
+    done;
+    echo "${directive}";
+    return 0
+}
+gcc-specs-nostrict () 
+{ 
+    local directive;
+    directive=$(gcc-specs-directive cc1);
+    [[ "${directive/\{!fstrict-overflow:}" != "${directive}" ]]
+}
+gcc-specs-now () 
+{ 
+    local directive;
+    directive=$(gcc-specs-directive link_command);
+    [[ "${directive/\{!nonow:}" != "${directive}" ]]
+}
+gcc-specs-pie () 
+{ 
+    local directive;
+    directive=$(gcc-specs-directive cc1);
+    [[ "${directive/\{!nopie:}" != "${directive}" ]]
+}
+gcc-specs-relro () 
+{ 
+    local directive;
+    directive=$(gcc-specs-directive link_command);
+    [[ "${directive/\{!norelro:}" != "${directive}" ]]
+}
+gcc-specs-ssp () 
+{ 
+    local directive;
+    directive=$(gcc-specs-directive cc1);
+    [[ "${directive/\{!fno-stack-protector:}" != "${directive}" ]]
+}
+gcc-specs-ssp-to-all () 
+{ 
+    local directive;
+    directive=$(gcc-specs-directive cc1);
+    [[ "${directive/\{!fno-stack-protector-all:}" != "${directive}" ]]
+}
+gcc-specs-stack-check () 
+{ 
+    local directive;
+    directive=$(gcc-specs-directive cc1);
+    [[ "${directive/\{!fno-stack-check:}" != "${directive}" ]]
+}
+gcc-version () 
+{ 
+    _gcc_fullversion '$1.$2' "$@"
+}
+gcc_do_filter_flags () 
+{ 
+    if ! _tc_use_if_iuse custom-cflags; then
+        strip-flags;
+        filter-flags '-O?';
+        append-flags -O2;
+    fi;
+    filter-flags '-mabi*' -m31 -m32 -m64;
+    filter-flags -frecord-gcc-switches;
+    filter-flags -mno-rtm -mno-htm;
+    filter-flags '-fsanitize=*';
+    if tc_version_is_between 6 8; then
+        filter-flags -mstackrealign;
+    fi;
+    case $(tc-arch) in 
+        amd64 | x86)
+            filter-flags '-mcpu=*';
+            tc_version_is_between 4.4 4.5 && append-flags -mno-avx;
+            if tc_version_is_between 4.6 4.7; then
+                replace-cpu-flags c3-2 pentium2 pentium3 pentium3m pentium-m i686;
+            fi
+        ;;
+        alpha)
+            append-ldflags -Wl,--no-relax
+        ;;
+        sparc)
+            tc_version_is_between 4.6 4.8 && MAKEOPTS+=" -j1"
+        ;;
+        *-macos)
+            tc_version_is_between 4.0 4.2 && filter-flags '-mcpu=*' '-march=*' '-mtune=*'
+        ;;
+    esac;
+    strip-unsupported-flags;
+    if is_crosscompile; then
+        CFLAGS="-O2 -pipe";
+        FFLAGS=${CFLAGS};
+        FCFLAGS=${CFLAGS};
+        local VAR="CFLAGS_"${CTARGET//[-.]/_};
+        CXXFLAGS=${!VAR-${CFLAGS}};
+    fi;
+    export GCJFLAGS=${GCJFLAGS:-${CFLAGS}}
+}
+gcc_do_make () 
+{ 
+    [[ -n ${1} ]] && GCC_MAKE_TARGET=${1};
+    if is_crosscompile || tc-is-cross-compiler; then
+        GCC_MAKE_TARGET=${GCC_MAKE_TARGET-all};
+    else
+        if [[ ${EXTRA_ECONF} == *--disable-bootstrap* ]]; then
+            GCC_MAKE_TARGET=${GCC_MAKE_TARGET-all};
+            ewarn "Disabling bootstrapping. ONLY recommended for development.";
+            ewarn "This is NOT a safe configuration for endusers!";
+            ewarn "This compiler may not be safe or reliable for production use!";
+        else
+            if _tc_use_if_iuse pgo; then
+                GCC_MAKE_TARGET=${GCC_MAKE_TARGET-profiledbootstrap};
+            else
+                GCC_MAKE_TARGET=${GCC_MAKE_TARGET-bootstrap-lean};
+            fi;
+        fi;
+    fi;
+    if [[ ${GCC_MAKE_TARGET} == "profiledbootstrap" ]]; then
+        ! tc_version_is_at_least 4.6 && export MAKEOPTS="${MAKEOPTS} -j1";
+    fi;
+    if [[ ${GCC_MAKE_TARGET} == "all" ]]; then
+        STAGE1_CFLAGS=${STAGE1_CFLAGS-"${CFLAGS}"};
+    else
+        if [[ $(gcc-version) == "3.4" && ${GCC_BRANCH_VER} == "3.4" ]] && gcc-specs-ssp; then
+            STAGE1_CFLAGS=${STAGE1_CFLAGS-"-O2"};
+        fi;
+    fi;
+    if is_crosscompile; then
+        BOOT_CFLAGS=${BOOT_CFLAGS-"-O2"};
+    else
+        BOOT_CFLAGS=${BOOT_CFLAGS-"$(get_abi_CFLAGS ${TARGET_DEFAULT_ABI}) ${CFLAGS}"};
+    fi;
+    if is_jit; then
+        pushd "${WORKDIR}"/build-jit > /dev/null || die;
+        einfo "Building JIT";
+        emake LDFLAGS="${LDFLAGS}" STAGE1_CFLAGS="${STAGE1_CFLAGS}" LIBPATH="${LIBPATH}" BOOT_CFLAGS="${BOOT_CFLAGS}";
+        popd > /dev/null || die;
+    fi;
+    einfo "Compiling ${PN} (${GCC_MAKE_TARGET})...";
+    pushd "${WORKDIR}"/build > /dev/null || die;
+    emake LDFLAGS="${LDFLAGS}" STAGE1_CFLAGS="${STAGE1_CFLAGS}" LIBPATH="${LIBPATH}" BOOT_CFLAGS="${BOOT_CFLAGS}" ${GCC_MAKE_TARGET};
+    if is_ada; then
+        ln -s gcc ../build/prev-gcc || die;
+        ln -s ${CHOST} ../build/prev-${CHOST} || die;
+        emake -C gcc gnatlib-shared;
+        emake -C gcc gnattools;
+    fi;
+    if ! is_crosscompile && _tc_use_if_iuse cxx && _tc_use_if_iuse doc; then
+        if type -p doxygen > /dev/null; then
+            if tc_version_is_at_least 4.3; then
+                cd "${CTARGET}"/libstdc++-v3/doc;
+                emake doc-man-doxygen;
+            else
+                cd "${CTARGET}"/libstdc++-v3;
+                emake doxygen-man;
+            fi;
+            find -name '*_build_*' -delete;
+            find -name '*_.3' -exec grep -l ' Directory Reference ' {} + | xargs rm -f;
+        else
+            ewarn "Skipping libstdc++ manpage generation since you don't have doxygen installed";
+        fi;
+    fi;
+    popd > /dev/null || die
+}
+gcc_movelibs () 
+{ 
+    if tc_version_is_at_least 5 && is_crosscompile; then
+        dodir "${HOSTLIBPATH#${EPREFIX}}";
+        mv "${ED}"/usr/$(get_libdir)/libcc1* "${D}${HOSTLIBPATH}" || die;
+    fi;
+    if [[ ${PWD} == "${WORKDIR}"/build-jit ]] && is_jit; then
+        dodir "${LIBPATH#${EPREFIX}}";
+        mv "${ED}"/usr/lib/libgccjit* "${D}${LIBPATH}" || die;
+    fi;
+    local x multiarg removedirs="";
+    for multiarg in $($(XGCC) -print-multi-lib);
+    do
+        multiarg=${multiarg#*;};
+        multiarg=${multiarg//@/ -};
+        local OS_MULTIDIR=$($(XGCC) ${multiarg} --print-multi-os-directory);
+        local MULTIDIR=$($(XGCC) ${multiarg} --print-multi-directory);
+        local TODIR="${D}${LIBPATH}"/${MULTIDIR};
+        local FROMDIR=;
+        [[ -d ${TODIR} ]] || mkdir -p ${TODIR};
+        for FROMDIR in "${LIBPATH}"/${OS_MULTIDIR} "${LIBPATH}"/../${MULTIDIR} "${PREFIX}"/lib/${OS_MULTIDIR} "${PREFIX}"/${CTARGET}/lib/${OS_MULTIDIR};
+        do
+            removedirs="${removedirs} ${FROMDIR}";
+            FROMDIR=${D}${FROMDIR};
+            if [[ ${FROMDIR} != "${TODIR}" && -d ${FROMDIR} ]]; then
+                local files=$(find "${FROMDIR}" -maxdepth 1 ! -type d 2>/dev/null);
+                if [[ -n ${files} ]]; then
+                    mv ${files} "${TODIR}" || die;
+                fi;
+            fi;
+        done;
+        fix_libtool_libdir_paths "${LIBPATH}/${MULTIDIR}";
+        FROMDIR="${PREFIX}/lib/${OS_MULTIDIR}";
+        for x in "${D}${FROMDIR}"/pkgconfig/libgcj*.pc;
+        do
+            [[ -f ${x} ]] || continue;
+            sed -i "/^libdir=/s:=.*:=${LIBPATH}/${MULTIDIR}:" "${x}" || die;
+            mv "${x}" "${D}${FROMDIR}"/pkgconfig/libgcj-${GCC_PV}.pc || die;
+        done;
+    done;
+    for FROMDIR in ${removedirs};
+    do
+        rmdir "${D}"${FROMDIR} &> /dev/null;
+    done;
+    find -depth "${ED}" -type d -exec rmdir {} + &> /dev/null
+}
+gcc_slot_java () 
+{ 
+    local x;
+    for x in "${D}${PREFIX}"/include/gc*.h "${D}${PREFIX}"/include/j*.h;
+    do
+        [[ -f ${x} ]] && mv -f "${x}" "${D}${LIBPATH}"/include/;
+    done;
+    for x in gcj gnu java javax org;
+    do
+        if [[ -d ${D}${PREFIX}/include/${x} ]]; then
+            dodir /${LIBPATH#${EPREFIX}}/include/${x};
+            mv -f "${D}${PREFIX}"/include/${x}/* "${D}${LIBPATH}"/include/${x}/;
+            rm -rf "${D}${PREFIX}"/include/${x};
+        fi;
+    done;
+    if [[ -d ${D}${PREFIX}/lib/security ]] || [[ -d ${D}${PREFIX}/$(get_libdir)/security ]]; then
+        dodir /${LIBPATH#${EPREFIX}}/security;
+        mv -f "${D}${PREFIX}"/lib*/security/* "${D}${LIBPATH}"/security;
+        rm -rf "${D}${PREFIX}"/lib*/security;
+    fi;
+    for x in libgcj.spec logging.properties;
+    do
+        x="${D}${PREFIX}/lib/${x}";
+        [[ -f ${x} ]] && mv -f "${x}" "${D}${LIBPATH}"/;
+    done;
+    cd "${D}${BINPATH}";
+    [[ -f jar ]] && mv -f jar gcj-jar
+}
+gcc_version_patch () 
+{ 
+    tc_version_is_at_least 4.3 && return 0;
+    local version_string=${GCC_RELEASE_VER};
+    einfo "Patching gcc version: ${version_string} (${BRANDING_GCC_PKGVERSION})";
+    local gcc_sed=(-e 's:gcc\.gnu\.org/bugs\.html:bugs\.gentoo\.org/:');
+    if grep -qs VERSUFFIX "${S}"/gcc/version.c; then
+        gcc_sed+=(-e "/VERSUFFIX \"\"/s:\"\":\" (${BRANDING_GCC_PKGVERSION})\":");
+    else
+        version_string="${version_string} (${BRANDING_GCC_PKGVERSION})";
+        gcc_sed+=(-e "/const char version_string\[\] = /s:= \".*\":= \"${version_string}\":");
+    fi;
+    sed -i "${gcc_sed[@]}" "${S}"/gcc/version.c || die
+}
+gen_usr_ldscript () 
+{ 
+    ewarn "${FUNCNAME}: Please migrate to usr-ldscript.eclass";
+    local lib libdir=$(get_libdir) output_format="" auto=false suffix=$(get_libname);
+    [[ -z ${ED+set} ]] && local ED=${D%/}${EPREFIX}/;
+    tc-is-static-only && return;
+    if [[ $(type -t multilib_is_native_abi) == "function" ]]; then
+        multilib_is_native_abi || return 0;
+    fi;
+    case ${CTARGET:-${CHOST}} in 
+        *-darwin*)
+
+        ;;
+        *-android*)
+            return 0
+        ;;
+        *linux* | *-freebsd* | *-openbsd* | *-netbsd*)
+            use prefix && return 0
+        ;;
+        *)
+            return 0
+        ;;
+    esac;
+    dodir /usr/${libdir};
+    if [[ $1 == "-a" ]]; then
+        auto=true;
+        shift;
+        dodir /${libdir};
+    fi;
+    local flags=(${CFLAGS} ${LDFLAGS} -Wl,--verbose);
+    if $(tc-getLD) --version | grep -q 'GNU gold'; then
+        local d="${T}/bfd-linker";
+        mkdir -p "${d}";
+        ln -sf $(which ${CHOST}-ld.bfd) "${d}"/ld;
+        flags+=(-B"${d}");
+    fi;
+    output_format=$($(tc-getCC) "${flags[@]}" 2>&1 | sed -n 's/^OUTPUT_FORMAT("\([^"]*\)",.*/\1/p');
+    [[ -n ${output_format} ]] && output_format="OUTPUT_FORMAT ( ${output_format} )";
+    for lib in "$@";
+    do
+        local tlib;
+        if ${auto}; then
+            lib="lib${lib}${suffix}";
+        else
+            [[ -r ${ED}/${libdir}/${lib} ]] || continue;
+        fi;
+        case ${CTARGET:-${CHOST}} in 
+            *-darwin*)
+                if ${auto}; then
+                    tlib=$(scanmacho -qF'%S#F' "${ED}"/usr/${libdir}/${lib});
+                else
+                    tlib=$(scanmacho -qF'%S#F' "${ED}"/${libdir}/${lib});
+                fi;
+                [[ -z ${tlib} ]] && die "unable to read install_name from ${lib}";
+                tlib=${tlib##*/};
+                if ${auto}; then
+                    mv "${ED}"/usr/${libdir}/${lib%${suffix}}.*${suffix#.} "${ED}"/${libdir}/ || die;
+                    if [[ ${tlib} != ${lib%${suffix}}.*${suffix#.} ]]; then
+                        mv "${ED}"/usr/${libdir}/${tlib%${suffix}}.*${suffix#.} "${ED}"/${libdir}/ || die;
+                    fi;
+                    rm -f "${ED}"/${libdir}/${lib};
+                fi;
+                if [[ ! -w "${ED}/${libdir}/${tlib}" ]]; then
+                    chmod u+w "${ED}${libdir}/${tlib}";
+                    local nowrite=yes;
+                fi;
+                install_name_tool -id "${EPREFIX}"/${libdir}/${tlib} "${ED}"/${libdir}/${tlib} || die "install_name_tool failed";
+                [[ -n ${nowrite} ]] && chmod u-w "${ED}${libdir}/${tlib}";
+                pushd "${ED}/usr/${libdir}" > /dev/null;
+                ln -snf "../../${libdir}/${tlib}" "${lib}";
+                popd > /dev/null
+            ;;
+            *)
+                if ${auto}; then
+                    tlib=$(scanelf -qF'%S#F' "${ED}"/usr/${libdir}/${lib});
+                    [[ -z ${tlib} ]] && die "unable to read SONAME from ${lib}";
+                    mv "${ED}"/usr/${libdir}/${lib}* "${ED}"/${libdir}/ || die;
+                    if [[ ${tlib} != ${lib}* ]]; then
+                        mv "${ED}"/usr/${libdir}/${tlib}* "${ED}"/${libdir}/ || die;
+                    fi;
+                    rm -f "${ED}"/${libdir}/${lib};
+                else
+                    tlib=${lib};
+                fi;
+                cat > "${ED}/usr/${libdir}/${lib}" <<-END_LDSCRIPT
+/* GNU ld script
+   Since Gentoo has critical dynamic libraries in /lib, and the static versions
+   in /usr/lib, we need to have a "fake" dynamic lib in /usr/lib, otherwise we
+   run into linking problems.  This "fake" dynamic lib is a linker script that
+   redirects the linker to the real lib.  And yes, this works in the cross-
+   compiling scenario as the sysroot-ed linker will prepend the real path.
+
+   See bug https://bugs.gentoo.org/4411 for more info.
+ */
+${output_format}
+GROUP ( ${EPREFIX}/${libdir}/${tlib} )
+END_LDSCRIPT
+
+            ;;
+        esac
+        fperms a+x "/usr/${libdir}/${lib}" || die "could not change perms on ${lib}";
+    done
+}
+gentoo_urls () 
+{ 
+    declare -A devspace_urls=([soap]=HTTP~soap/distfiles/URI [sam]=HTTP~sam/distfiles/sys-devel/gcc/URI [slyfox]=HTTP~sam/distfiles/URI [xen0n]=HTTP~xen0n/distfiles/sys-devel/gcc/URI [tamiko]=HTTP~tamiko/distfiles/URI [zorry]=HTTP~zorry/patches/gcc/URI [vapier]=HTTP~vapier/dist/URI [blueness]=HTTP~blueness/dist/URI);
+    if [[ -n ${TOOLCHAIN_PATCH_DEV} ]]; then
+        local devspace_url=${devspace_urls[${TOOLCHAIN_PATCH_DEV}]};
+        if [[ -n ${devspace_url} ]]; then
+            local devspace_url_exp=${devspace_url//HTTP/https:\/\/dev.gentoo.org\/};
+            devspace_url_exp=${devspace_url_exp//URI/$1};
+            echo ${devspace_url_exp};
+            return;
+        fi;
+    fi;
+    local devspace="
+		HTTP~soap/distfiles/URI
+		HTTP~sam/distfiles/URI
+		HTTP~sam/distfiles/sys-devel/gcc/URI
+		HTTP~tamiko/distfiles/URI
+		HTTP~zorry/patches/gcc/URI
+		HTTP~vapier/dist/URI
+		HTTP~blueness/dist/URI";
+    devspace=${devspace//HTTP/https:\/\/dev.gentoo.org\/};
+    echo ${devspace//URI/$1} mirror://gentoo/$1
+}
+get-flag () 
+{ 
+    [[ $# -ne 1 ]] && die "usage: <flag>";
+    local f var findflag="$1";
+    for var in $(all-flag-vars);
+    do
+        for f in ${!var};
+        do
+            if [ "${f/${findflag}}" != "${f}" ]; then
+                printf "%s\n" "${f/-${findflag}=}";
+                return 0;
+            fi;
+        done;
+    done;
+    return 1
+}
+get_abi_CFLAGS () 
+{ 
+    get_abi_var CFLAGS "$@"
+}
+get_abi_CHOST () 
+{ 
+    get_abi_var CHOST "$@"
+}
+get_abi_CTARGET () 
+{ 
+    get_abi_var CTARGET "$@"
+}
+get_abi_FAKE_TARGETS () 
+{ 
+    get_abi_var FAKE_TARGETS "$@"
+}
+get_abi_LDFLAGS () 
+{ 
+    get_abi_var LDFLAGS "$@"
+}
+get_abi_LIBDIR () 
+{ 
+    get_abi_var LIBDIR "$@"
+}
+get_abi_var () 
+{ 
+    local flag=$1;
+    local abi=${2:-${ABI:-${DEFAULT_ABI:-default}}};
+    local var="${flag}_${abi}";
+    echo ${!var}
+}
+get_all_abis () 
+{ 
+    local x order="" mvar dvar;
+    mvar="MULTILIB_ABIS";
+    dvar="DEFAULT_ABI";
+    if [[ -n $1 ]]; then
+        mvar="$1_${mvar}";
+        dvar="$1_${dvar}";
+    fi;
+    if [[ -z ${!mvar} ]]; then
+        echo "default";
+        return 0;
+    fi;
+    for x in ${!mvar};
+    do
+        if [[ ${x} != ${!dvar} ]]; then
+            order="${order:+${order} }${x}";
+        fi;
+    done;
+    order="${order:+${order} }${!dvar}";
+    echo ${order};
+    return 0
+}
+get_all_libdirs () 
+{ 
+    local libdirs abi;
+    for abi in ${MULTILIB_ABIS};
+    do
+        libdirs+=" $(get_abi_LIBDIR ${abi})";
+    done;
+    [[ " ${libdirs} " != *" lib "* ]] && libdirs+=" lib";
+    echo "${libdirs}"
+}
+get_exeext () 
+{ 
+    case ${CHOST} in 
+        *-cygwin* | mingw* | *-mingw*)
+            echo ".exe"
+        ;;
+    esac
+}
+get_gcc_src_uri () 
+{ 
+    export PATCH_GCC_VER=${PATCH_GCC_VER:-${GCC_RELEASE_VER}};
+    export MUSL_GCC_VER=${MUSL_GCC_VER:-${PATCH_GCC_VER}};
+    export PIE_GCC_VER=${PIE_GCC_VER:-${GCC_RELEASE_VER}};
+    export HTB_GCC_VER=${HTB_GCC_VER:-${GCC_RELEASE_VER}};
+    export SPECS_GCC_VER=${SPECS_GCC_VER:-${GCC_RELEASE_VER}};
+    if tc_is_live; then
+        :;
+    else
+        if [[ -n ${GCC_TARBALL_SRC_URI} ]]; then
+            GCC_SRC_URI="${GCC_TARBALL_SRC_URI}";
+        else
+            if [[ -n ${SNAPSHOT} ]]; then
+                GCC_SRC_URI="https://gcc.gnu.org/pub/gcc/snapshots/${SNAPSHOT}/gcc-${SNAPSHOT}.tar.xz";
+            else
+                if tc_version_is_between 5.5 6 || tc_version_is_between 6.4 7 || tc_version_is_at_least 7.2; then
+                    GCC_SRC_URI="mirror://gnu/gcc/gcc-${GCC_PV}/gcc-${GCC_RELEASE_VER}.tar.xz";
+                else
+                    GCC_SRC_URI="mirror://gnu/gcc/gcc-${GCC_PV}/gcc-${GCC_RELEASE_VER}.tar.bz2";
+                fi;
+            fi;
+        fi;
+    fi;
+    [[ -n ${PATCH_VER} ]] && GCC_SRC_URI+=" $(gentoo_urls gcc-${PATCH_GCC_VER}-patches-${PATCH_VER}.tar.${TOOLCHAIN_PATCH_SUFFIX})";
+    [[ -n ${MUSL_VER} ]] && GCC_SRC_URI+=" $(gentoo_urls gcc-${MUSL_GCC_VER}-musl-patches-${MUSL_VER}.tar.${TOOLCHAIN_PATCH_SUFFIX})";
+    [[ -n ${PIE_VER} ]] && PIE_CORE=${PIE_CORE:-gcc-${PIE_GCC_VER}-piepatches-v${PIE_VER}.tar.${TOOLCHAIN_PATCH_SUFFIX}} && GCC_SRC_URI+=" $(gentoo_urls ${PIE_CORE})";
+    [[ -n ${SPECS_VER} ]] && GCC_SRC_URI+=" $(gentoo_urls gcc-${SPECS_GCC_VER}-specs-${SPECS_VER}.tar.${TOOLCHAIN_PATCH_SUFFIX})";
+    if tc_has_feature gcj; then
+        if tc_version_is_at_least 4.5; then
+            GCC_SRC_URI+=" gcj? ( ftp://sourceware.org/pub/java/ecj-4.5.jar )";
+        else
+            if tc_version_is_at_least 4.3; then
+                GCC_SRC_URI+=" gcj? ( ftp://sourceware.org/pub/java/ecj-4.3.jar )";
+            fi;
+        fi;
+    fi;
+    [[ -n ${CYGWINPORTS_GITREV} ]] && GCC_SRC_URI+=" elibc_Cygwin? ( https://github.com/cygwinports/gcc/archive/${CYGWINPORTS_GITREV}.tar.gz
+			-> gcc-cygwinports-${CYGWINPORTS_GITREV}.tar.gz )";
+    echo "${GCC_SRC_URI}"
+}
+get_install_abis () 
+{ 
+    local x order="";
+    if [[ -z ${MULTILIB_ABIS} ]]; then
+        echo "default";
+        return 0;
+    fi;
+    if [[ ${EMULTILIB_PKG} == "true" ]]; then
+        for x in ${MULTILIB_ABIS};
+        do
+            if [[ ${x} != "${DEFAULT_ABI}" ]]; then
+                has ${x} ${ABI_DENY} || order="${order} ${x}";
+            fi;
+        done;
+        has ${DEFAULT_ABI} ${ABI_DENY} || order="${order} ${DEFAULT_ABI}";
+        if [[ -n ${ABI_ALLOW} ]]; then
+            local ordera="";
+            for x in ${order};
+            do
+                if has ${x} ${ABI_ALLOW}; then
+                    ordera="${ordera} ${x}";
+                fi;
+            done;
+            order=${ordera};
+        fi;
+    else
+        order=${DEFAULT_ABI};
+    fi;
+    if [[ -z ${order} ]]; then
+        die "The ABI list is empty.  Are you using a proper multilib profile?  Perhaps your USE flags or MULTILIB_ABIS are too restrictive for this package.";
+    fi;
+    echo ${order};
+    return 0
+}
+get_libdir () 
+{ 
+    local libdir_var="LIBDIR_${ABI}";
+    local libdir="lib";
+    [[ -n ${ABI} && -n ${!libdir_var} ]] && libdir=${!libdir_var};
+    echo "${libdir}"
+}
+get_libname () 
+{ 
+    local libname;
+    local ver=$1;
+    case ${CHOST} in 
+        *-cygwin*)
+            libname="dll.a"
+        ;;
+        mingw* | *-mingw*)
+            libname="dll"
+        ;;
+        *-darwin*)
+            libname="dylib"
+        ;;
+        *-mint*)
+            libname="irrelevant"
+        ;;
+        hppa*-hpux*)
+            libname="sl"
+        ;;
+        *)
+            libname="so"
+        ;;
+    esac;
+    if [[ -z $* ]]; then
+        echo ".${libname}";
+    else
+        for ver in "$@";
+        do
+            case ${CHOST} in 
+                *-cygwin*)
+                    echo ".${ver}.${libname}"
+                ;;
+                *-darwin*)
+                    echo ".${ver}.${libname}"
+                ;;
+                *-mint*)
+                    echo ".${libname}"
+                ;;
+                *)
+                    echo ".${libname}.${ver}"
+                ;;
+            esac;
+        done;
+    fi
+}
+get_make_var () 
+{ 
+    local var=$1 makefile=${2:-${WORKDIR}/build/Makefile};
+    echo -e "e:\\n\\t@echo \$(${var})\\ninclude ${makefile}" | r=${makefile%/*} emake --no-print-directory -s -f - 2> /dev/null
+}
+get_modname () 
+{ 
+    local modname;
+    local ver=$1;
+    case ${CHOST} in 
+        *-darwin*)
+            modname="bundle"
+        ;;
+        *)
+            modname="so"
+        ;;
+    esac;
+    echo ".${modname}"
+}
+gnuconfig_do_update () 
+{ 
+    local configsubs_dir target targetlist file;
+    [[ $# -eq 0 ]] && die "do not call gnuconfig_do_update; use gnuconfig_update";
+    configsubs_dir=$(gnuconfig_findnewest);
+    einfo "Using GNU config files from ${configsubs_dir}";
+    for file in "$@";
+    do
+        if [[ ! -r ${configsubs_dir}/${file} ]]; then
+            eerror "Can't read ${configsubs_dir}/${file}, skipping..";
+            continue;
+        fi;
+        targetlist=$(find "${startdir}" -name "${file}");
+        if [[ -n ${targetlist} ]]; then
+            for target in ${targetlist};
+            do
+                [[ -L ${target} ]] && rm -f "${target}";
+                ebegin "  Updating ${target/$startdir\//}";
+                cp -f "${configsubs_dir}/${file}" "${target}";
+                eend $? || die;
+            done;
+        else
+            ewarn "  No ${file} found in ${startdir}, skipping ...";
+        fi;
+    done;
+    return 0
+}
+gnuconfig_findnewest () 
+{ 
+    local locations=();
+    local prefix;
+    case ${EAPI} in 
+        5 | 6)
+            prefix="${EPREFIX}"
+        ;;
+        *)
+            prefix="${BROOT}"
+        ;;
+    esac;
+    locations+=("${prefix}"/usr/share/misc/config.sub "${prefix}"/usr/share/gnuconfig/config.sub "${prefix}"/usr/share/automake*/config.sub "${prefix}"/usr/share/libtool/config.sub);
+    grep -s '^timestamp' "${locations[@]}" | sort -r -n -t\' -k2 | sed -n '1{s,/config.sub:.*$,,;p;q}'
+}
+gnuconfig_update () 
+{ 
+    local startdir;
+    if [[ $1 == /* ]]; then
+        startdir=$1;
+        shift;
+    else
+        startdir=${S};
+    fi;
+    if [[ $# -gt 0 ]]; then
+        gnuconfig_do_update "$@";
+    else
+        gnuconfig_do_update config.sub config.guess;
+    fi;
+    return $?
+}
+hardened_gcc_is_stable () 
+{ 
+    local tocheck;
+    if [[ $1 == "pie" ]]; then
+        tocheck=${PIE_GLIBC_STABLE};
+    else
+        if [[ $1 == "ssp" ]]; then
+            tocheck=${SSP_STABLE};
+        else
+            die "hardened_gcc_stable needs to be called with pie or ssp";
+        fi;
+    fi;
+    has $(tc-arch) ${tocheck} && return 0;
+    return 1
+}
+hardened_gcc_works () 
+{ 
+    if [[ $1 == "pie" ]]; then
+        want_pie || return 1;
+        _tc_use_if_iuse nopie && return 1;
+        hardened_gcc_is_stable pie;
+        return $?;
+    else
+        if [[ $1 == "ssp" ]]; then
+            [[ -n ${SPECS_VER} ]] || return 1;
+            _tc_use_if_iuse nossp && return 1;
+            hardened_gcc_is_stable ssp;
+            return $?;
+        else
+            hardened_gcc_works pie || return 1;
+            hardened_gcc_works ssp || return 1;
+            return 0;
+        fi;
+    fi
+}
+has_multilib_profile () 
+{ 
+    [ -n "${MULTILIB_ABIS}" -a "${MULTILIB_ABIS}" != "${MULTILIB_ABIS/ /}" ]
+}
+host-is-pax () 
+{ 
+    grep -qs ^PaX: /proc/self/status
+}
+hprefixify () 
+{ 
+    use prefix || return 0;
+    local xl=() x;
+    while [[ $# -gt 0 ]]; do
+        case $1 in 
+            -e)
+                local PREFIX_EXTRA_REGEX="$2";
+                shift
+            ;;
+            -w)
+                local PREFIX_LINE_MATCH="$2";
+                shift
+            ;;
+            -q)
+                local PREFIX_QUOTE_CHAR="${EPREFIX:+$2}";
+                shift
+            ;;
+            *)
+                xl+=("$1")
+            ;;
+        esac;
+        shift;
+    done;
+    local dirs="/(usr|lib(|[onx]?32|n?64)|etc|bin|sbin|var|opt|run)" eprefix="${PREFIX_QUOTE_CHAR}${EPREFIX}${PREFIX_QUOTE_CHAR}";
+    [[ ${#xl[@]} -lt 1 ]] && die "at least one file operand is required";
+    einfo "Adjusting to prefix ${EPREFIX:-/}";
+    for x in "${xl[@]}";
+    do
+        if [[ -e ${x} ]]; then
+            ebegin "  ${x##*/}";
+            sed -r -e "${PREFIX_LINE_MATCH}s,([^[:alnum:]}\)\.])${dirs},\1${eprefix}/\2,g" -e "${PREFIX_LINE_MATCH}s,^${dirs},${eprefix}/\1," -e "${PREFIX_EXTRA_REGEX}" -i "${x}";
+            eend $? || die "failed to prefixify ${x}";
+        else
+            die "${x} does not exist";
+        fi;
+    done
+}
+in_iuse () 
+{ 
+    local use=${1};
+    if [[ -z "${use}" ]]; then
+        echo "!!! in_iuse() called without a parameter." 1>&2;
+        echo "!!! in_iuse <USEFLAG>" 1>&2;
+        die "in_iuse() called without a parameter";
+    fi;
+    local liuse=(${IUSE_EFFECTIVE});
+    has "${use}" "${liuse[@]#[+-]}"
+}
+is-flag () 
+{ 
+    is-flagq "$@" && echo true
+}
+is-flagq () 
+{ 
+    [[ -n $2 ]] && die "Usage: is-flag <flag>";
+    local var;
+    for var in $(all-flag-vars);
+    do
+        _is_flagq ${var} "$1" && return 0;
+    done;
+    return 1
+}
+is-ldflag () 
+{ 
+    is-ldflagq "$@" && echo true
+}
+is-ldflagq () 
+{ 
+    [[ -n $2 ]] && die "Usage: is-ldflag <flag>";
+    _is_flagq LDFLAGS $1
+}
+is_ada () 
+{ 
+    gcc-lang-supported ada || return 1;
+    _tc_use_if_iuse ada
+}
+is_crosscompile () 
+{ 
+    [[ ${CHOST} != ${CTARGET} ]]
+}
+is_cxx () 
+{ 
+    gcc-lang-supported 'c++' || return 1;
+    _tc_use_if_iuse cxx
+}
+is_d () 
+{ 
+    gcc-lang-supported d || return 1;
+    _tc_use_if_iuse d
+}
+is_f77 () 
+{ 
+    gcc-lang-supported f77 || return 1;
+    _tc_use_if_iuse fortran
+}
+is_f95 () 
+{ 
+    gcc-lang-supported f95 || return 1;
+    _tc_use_if_iuse fortran
+}
+is_final_abi () 
+{ 
+    has_multilib_profile || return 0;
+    set -- $(get_install_abis);
+    local LAST_ABI=$#;
+    [[ ${!LAST_ABI} == ${ABI} ]]
+}
+is_fortran () 
+{ 
+    gcc-lang-supported fortran || return 1;
+    _tc_use_if_iuse fortran
+}
+is_gcj () 
+{ 
+    gcc-lang-supported java || return 1;
+    _tc_use_if_iuse cxx && _tc_use_if_iuse gcj
+}
+is_go () 
+{ 
+    gcc-lang-supported go || return 1;
+    _tc_use_if_iuse cxx && _tc_use_if_iuse go
+}
+is_jit () 
+{ 
+    gcc-lang-supported jit || return 1;
+    is_crosscompile && return 1;
+    _tc_use_if_iuse jit
+}
+is_multilib () 
+{ 
+    _tc_use_if_iuse multilib
+}
+is_objc () 
+{ 
+    gcc-lang-supported objc || return 1;
+    _tc_use_if_iuse objc
+}
+is_objcxx () 
+{ 
+    gcc-lang-supported 'obj-c++' || return 1;
+    _tc_use_if_iuse cxx && _tc_use_if_iuse objc++
+}
+list-paxables () 
+{ 
+    file "$@" 2> /dev/null | grep -E 'ELF.*(executable|shared object)' | sed -e 's/: .*$//'
+}
+make_gcc_hard () 
+{ 
+    local gcc_hard_flags="";
+    if ! tc_version_is_at_least 6.0 && [[ $(gcc-major-version) -ge 6 ]]; then
+        einfo "Disabling PIE in stage1 (only) ...";
+        sed -i -e "/^STAGE1_LDFLAGS/ s/$/ -no-pie/" "${S}"/Makefile.in || die;
+    fi;
+    if tc_version_is_at_least 6.0; then
+        if _tc_use_if_iuse pie; then
+            einfo "Updating gcc to use automatic PIE building ...";
+        fi;
+        if _tc_use_if_iuse ssp; then
+            einfo "Updating gcc to use automatic SSP building ...";
+        fi;
+        if _tc_use_if_iuse hardened; then
+            gcc_hard_flags+=" -DEXTRA_OPTIONS";
+            if _tc_use_if_iuse cet && [[ ${CTARGET} == *x86_64*-linux* ]]; then
+                gcc_hard_flags+=" -DEXTRA_OPTIONS_CF";
+            fi;
+            BRANDING_GCC_PKGVERSION=${BRANDING_GCC_PKGVERSION/Gentoo/Gentoo Hardened};
+        fi;
+    else
+        if _tc_use_if_iuse hardened; then
+            BRANDING_GCC_PKGVERSION=${BRANDING_GCC_PKGVERSION/Gentoo/Gentoo Hardened};
+            if hardened_gcc_works; then
+                einfo "Updating gcc to use automatic PIE + SSP building ...";
+                gcc_hard_flags+=" -DEFAULT_PIE_SSP";
+            else
+                if hardened_gcc_works pie; then
+                    einfo "Updating gcc to use automatic PIE building ...";
+                    ewarn "SSP has not been enabled by default";
+                    gcc_hard_flags+=" -DEFAULT_PIE";
+                else
+                    if hardened_gcc_works ssp; then
+                        einfo "Updating gcc to use automatic SSP building ...";
+                        ewarn "PIE has not been enabled by default";
+                        gcc_hard_flags+=" -DEFAULT_SSP";
+                    else
+                        ewarn "hardened is not supported for this arch in this gcc version";
+                        return 0;
+                    fi;
+                fi;
+            fi;
+        else
+            if hardened_gcc_works ssp; then
+                einfo "Updating gcc to use automatic SSP building ...";
+                gcc_hard_flags+=" -DEFAULT_SSP";
+            fi;
+        fi;
+    fi;
+    sed -e '/^ALL_CFLAGS/iHARD_CFLAGS = ' -e 's|^ALL_CFLAGS = |ALL_CFLAGS = $(HARD_CFLAGS) |' -i "${S}"/gcc/Makefile.in || die;
+    if tc_version_is_at_least 4.7; then
+        sed -e '/^ALL_CXXFLAGS/iHARD_CFLAGS = ' -e 's|^ALL_CXXFLAGS = |ALL_CXXFLAGS = $(HARD_CFLAGS) |' -i "${S}"/gcc/Makefile.in || die;
+    fi;
+    sed -i -e "/^HARD_CFLAGS = /s|=|= ${gcc_hard_flags} |" "${S}"/gcc/Makefile.in || die
+}
+multilib_env () 
+{ 
+    local CTARGET=${1:-${CTARGET}};
+    local cpu=${CTARGET%%*-};
+    if [[ ${CTARGET} = *-musl* ]]; then
+        : ${MULTILIB_ABIS=default};
+        : ${DEFAULT_ABI=default};
+        export MULTILIB_ABIS DEFAULT_ABI;
+        return;
+    fi;
+    case ${cpu} in 
+        aarch64*)
+            export CFLAGS_arm=${CFLAGS_arm-};
+            case ${cpu} in 
+                aarch64*be)
+                    export CHOST_arm="armv8b-${CTARGET#*-}"
+                ;;
+                *)
+                    export CHOST_arm="armv8l-${CTARGET#*-}"
+                ;;
+            esac;
+            CHOST_arm=${CHOST_arm/%-gnu/-gnueabi};
+            export CTARGET_arm=${CHOST_arm};
+            export LIBDIR_arm="lib";
+            export CFLAGS_arm64=${CFLAGS_arm64-};
+            export CHOST_arm64=${CTARGET};
+            export CTARGET_arm64=${CHOST_arm64};
+            export LIBDIR_arm64="lib64";
+            : ${MULTILIB_ABIS=arm64};
+            : ${DEFAULT_ABI=arm64}
+        ;;
+        x86_64*)
+            export CFLAGS_x86=${CFLAGS_x86--m32};
+            export CHOST_x86=${CTARGET/x86_64/i686};
+            CHOST_x86=${CHOST_x86/%-gnux32/-gnu};
+            export CTARGET_x86=${CHOST_x86};
+            if [[ ${SYMLINK_LIB} == "yes" ]]; then
+                export LIBDIR_x86="lib32";
+            else
+                export LIBDIR_x86="lib";
+            fi;
+            export CFLAGS_amd64=${CFLAGS_amd64--m64};
+            export CHOST_amd64=${CTARGET/%-gnux32/-gnu};
+            export CTARGET_amd64=${CHOST_amd64};
+            export LIBDIR_amd64="lib64";
+            export CFLAGS_x32=${CFLAGS_x32--mx32};
+            export CHOST_x32=${CTARGET/%-gnu/-gnux32};
+            export CTARGET_x32=${CHOST_x32};
+            export LIBDIR_x32="libx32";
+            case ${CTARGET} in 
+                *-gnux32)
+                    : ${MULTILIB_ABIS=x32 amd64 x86};
+                    : ${DEFAULT_ABI=x32}
+                ;;
+                *)
+                    : ${MULTILIB_ABIS=amd64 x86};
+                    : ${DEFAULT_ABI=amd64}
+                ;;
+            esac
+        ;;
+        loongarch64*)
+            export CFLAGS_lp64d=${CFLAGS_lp64d--mabi=lp64d};
+            export CHOST_lp64d=${CTARGET};
+            export CTARGET_lp64d=${CTARGET};
+            export LIBDIR_lp64d=${LIBDIR_lp64d-lib64};
+            : ${MULTILIB_ABIS=lp64d};
+            : ${DEFAULT_ABI=lp64d}
+        ;;
+        mips64* | mipsisa64*)
+            export CFLAGS_o32=${CFLAGS_o32--mabi=32};
+            export CHOST_o32=${CTARGET/mips64/mips};
+            export CHOST_o32=${CHOST_o32/mipsisa64/mipsisa32};
+            export CTARGET_o32=${CHOST_o32};
+            export LIBDIR_o32="lib";
+            export CFLAGS_n32=${CFLAGS_n32--mabi=n32};
+            export CHOST_n32=${CTARGET};
+            export CTARGET_n32=${CHOST_n32};
+            export LIBDIR_n32="lib32";
+            export CFLAGS_n64=${CFLAGS_n64--mabi=64};
+            export CHOST_n64=${CTARGET};
+            export CTARGET_n64=${CHOST_n64};
+            export LIBDIR_n64="lib64";
+            : ${MULTILIB_ABIS=n64 n32 o32};
+            : ${DEFAULT_ABI=n32}
+        ;;
+        powerpc64*)
+            export CFLAGS_ppc=${CFLAGS_ppc--m32};
+            export CHOST_ppc=${CTARGET/powerpc64/powerpc};
+            export CTARGET_ppc=${CHOST_ppc};
+            export LIBDIR_ppc="lib";
+            export CFLAGS_ppc64=${CFLAGS_ppc64--m64};
+            export CHOST_ppc64=${CTARGET};
+            export CTARGET_ppc64=${CHOST_ppc64};
+            export LIBDIR_ppc64="lib64";
+            : ${MULTILIB_ABIS=ppc64 ppc};
+            : ${DEFAULT_ABI=ppc64}
+        ;;
+        riscv64*)
+            : ${MULTILIB_ABIS=lp64d lp64 ilp32d ilp32};
+            : ${DEFAULT_ABI=lp64d};
+            local _libdir_riscvdefaultabi_variable="LIBDIR_${DEFAULT_ABI}";
+            local _libdir_riscvdefaultabi=${!_libdir_riscvdefaultabi_variable};
+            export ${_libdir_riscvdefaultabi_variable}=${_libdir_riscvdefaultabi:-lib64};
+            export CFLAGS_lp64d=${CFLAGS_lp64d--mabi=lp64d -march=rv64gc};
+            export CHOST_lp64d=${CTARGET};
+            export CTARGET_lp64d=${CTARGET};
+            export LIBDIR_lp64d=${LIBDIR_lp64d-lib64/lp64d};
+            export CFLAGS_lp64=${CFLAGS_lp64--mabi=lp64 -march=rv64imac};
+            export CHOST_lp64=${CTARGET};
+            export CTARGET_lp64=${CTARGET};
+            export LIBDIR_lp64=${LIBDIR_lp64-lib64/lp64};
+            export CFLAGS_ilp32d=${CFLAGS_ilp32d--mabi=ilp32d -march=rv32imafdc};
+            export CHOST_ilp32d=${CTARGET/riscv64/riscv32};
+            export CTARGET_ilp32d=${CTARGET/riscv64/riscv32};
+            export LIBDIR_ilp32d=${LIBDIR_ilp32d-lib32/ilp32d};
+            export CFLAGS_ilp32=${CFLAGS_ilp32--mabi=ilp32 -march=rv32imac};
+            export CHOST_ilp32=${CTARGET/riscv64/riscv32};
+            export CTARGET_ilp32=${CTARGET/riscv64/riscv32};
+            export LIBDIR_ilp32=${LIBDIR_ilp32-lib32/ilp32}
+        ;;
+        riscv32*)
+            : ${MULTILIB_ABIS=ilp32d ilp32};
+            : ${DEFAULT_ABI=ilp32d};
+            local _libdir_riscvdefaultabi_variable="LIBDIR_${DEFAULT_ABI}";
+            local _libdir_riscvdefaultabi=${!_libdir_riscvdefaultabi_variable};
+            export ${_libdir_riscvdefaultabi_variable}=${_libdir_riscvdefaultabi:-lib};
+            export CFLAGS_ilp32d=${CFLAGS_ilp32d--mabi=ilp32d -march=rv32imafdc};
+            export CHOST_ilp32d=${CTARGET};
+            export CTARGET_ilp32d=${CTARGET};
+            export LIBDIR_ilp32d=${LIBDIR_ilp32d-lib32/ilp32d};
+            export CFLAGS_ilp32=${CFLAGS_ilp32--mabi=ilp32 -march=rv32imac};
+            export CHOST_ilp32=${CTARGET};
+            export CTARGET_ilp32=${CTARGET};
+            export LIBDIR_ilp32=${LIBDIR_ilp32-lib32/ilp32}
+        ;;
+        s390x*)
+            export CFLAGS_s390=${CFLAGS_s390--m31};
+            export CHOST_s390=${CTARGET/s390x/s390};
+            export CTARGET_s390=${CHOST_s390};
+            export LIBDIR_s390="lib";
+            export CFLAGS_s390x=${CFLAGS_s390x--m64};
+            export CHOST_s390x=${CTARGET};
+            export CTARGET_s390x=${CHOST_s390x};
+            export LIBDIR_s390x="lib64";
+            : ${MULTILIB_ABIS=s390x s390};
+            : ${DEFAULT_ABI=s390x}
+        ;;
+        sparc64*)
+            export CFLAGS_sparc32=${CFLAGS_sparc32--m32};
+            export CHOST_sparc32=${CTARGET/sparc64/sparc};
+            export CTARGET_sparc32=${CHOST_sparc32};
+            export LIBDIR_sparc32="lib";
+            export CFLAGS_sparc64=${CFLAGS_sparc64--m64};
+            export CHOST_sparc64=${CTARGET};
+            export CTARGET_sparc64=${CHOST_sparc64};
+            export LIBDIR_sparc64="lib64";
+            : ${MULTILIB_ABIS=sparc64 sparc32};
+            : ${DEFAULT_ABI=sparc64}
+        ;;
+        *)
+            : ${MULTILIB_ABIS=default};
+            : ${DEFAULT_ABI=default}
+        ;;
+    esac;
+    export MULTILIB_ABIS DEFAULT_ABI
+}
+multilib_toolchain_setup () 
+{ 
+    local v vv;
+    export ABI=$1;
+    local save_restore_variables=(CBUILD CHOST AR CC CXX F77 FC LD NM OBJCOPY OBJDUMP PKG_CONFIG RANLIB READELF STRINGS STRIP PKG_CONFIG_LIBDIR PKG_CONFIG_PATH PKG_CONFIG_SYSTEM_INCLUDE_PATH PKG_CONFIG_SYSTEM_LIBRARY_PATH);
+    if [[ ${_DEFAULT_ABI_SAVED} == "true" ]]; then
+        for v in "${save_restore_variables[@]}";
+        do
+            vv="_abi_saved_${v}";
+            [[ ${!vv+set} == "set" ]] && export ${v}="${!vv}" || unset ${v};
+            unset ${vv};
+        done;
+        unset _DEFAULT_ABI_SAVED;
+    fi;
+    if [[ ${ABI} != ${DEFAULT_ABI} ]]; then
+        for v in "${save_restore_variables[@]}";
+        do
+            vv="_abi_saved_${v}";
+            [[ ${!v+set} == "set" ]] && export ${vv}="${!v}" || unset ${vv};
+        done;
+        export _DEFAULT_ABI_SAVED="true";
+        if [[ ${CBUILD} == "${CHOST}" ]]; then
+            export CBUILD=$(get_abi_CHOST $1);
+        fi;
+        export CHOST=$(get_abi_CHOST ${DEFAULT_ABI});
+        export AR="$(tc-getAR)";
+        export CC="$(tc-getCC) $(get_abi_CFLAGS)";
+        export CXX="$(tc-getCXX) $(get_abi_CFLAGS)";
+        export F77="$(tc-getF77) $(get_abi_CFLAGS)";
+        export FC="$(tc-getFC) $(get_abi_CFLAGS)";
+        export LD="$(tc-getLD) $(get_abi_LDFLAGS)";
+        export NM="$(tc-getNM)";
+        export OBJCOPY="$(tc-getOBJCOPY)";
+        export OBJDUMP="$(tc-getOBJDUMP)";
+        export PKG_CONFIG="$(tc-getPKG_CONFIG)";
+        export RANLIB="$(tc-getRANLIB)";
+        export READELF="$(tc-getREADELF)";
+        export STRINGS="$(tc-getSTRINGS)";
+        export STRIP="$(tc-getSTRIP)";
+        export CHOST=$(get_abi_CHOST $1);
+        export PKG_CONFIG_LIBDIR=${EPREFIX}/usr/$(get_libdir)/pkgconfig;
+        export PKG_CONFIG_PATH=${EPREFIX}/usr/share/pkgconfig;
+        export PKG_CONFIG_SYSTEM_INCLUDE_PATH=${EPREFIX}/usr/include;
+        export PKG_CONFIG_SYSTEM_LIBRARY_PATH=${EPREFIX}/$(get_libdir):${EPREFIX}/usr/$(get_libdir);
+    fi
+}
+no-as-needed () 
+{ 
+    [[ $# -ne 0 ]] && die "no-as-needed takes no arguments";
+    case $($(tc-getLD) -v 2>&1 </dev/null) in 
+        *GNU*)
+            echo "-Wl,--no-as-needed"
+        ;;
+    esac
+}
+number_abis () 
+{ 
+    set -- `get_install_abis`;
+    echo $#
+}
+pax-mark () 
+{ 
+    local f;
+    local flags;
+    local ret=0;
+    flags="${1//[!zPpEeMmRrSs]}";
+    [[ -n "${flags}" ]] || return 0;
+    shift;
+    local dodefault="";
+    [[ -n "${flags//[!z]}" ]] && dodefault="yes";
+    if has PT ${PAX_MARKINGS}; then
+        for f in "$@";
+        do
+            if type -p paxctl > /dev/null; then
+                einfo "PT_PAX marking -${flags} ${f} with paxctl";
+                paxctl -q${flags} "${f}" > /dev/null 2>&1 && continue;
+            fi;
+            if type -p paxctl-ng > /dev/null && paxctl-ng -L; then
+                einfo "PT_PAX marking -${flags} ${f} with paxctl-ng";
+                flags="${flags//z}";
+                [[ ${dodefault} == "yes" ]] && paxctl-ng -L -z "${f}" > /dev/null 2>&1;
+                [[ -n "${flags}" ]] || continue;
+                paxctl-ng -L -${flags} "${f}" > /dev/null 2>&1 && continue;
+            fi;
+            if type -p scanelf > /dev/null && [[ ${PAX_MARKINGS} != "none" ]]; then
+                einfo "PT_PAX marking -${flags} ${f} with scanelf";
+                scanelf -Xxz ${flags} "$f" > /dev/null 2>&1;
+            else
+                if [[ ${PAX_MARKINGS} != "none" ]]; then
+                    elog "Failed to set PT_PAX markings -${flags} ${f}.";
+                    ret=1;
+                fi;
+            fi;
+        done;
+    fi;
+    if has XT ${PAX_MARKINGS}; then
+        flags="${flags//z}";
+        for f in "$@";
+        do
+            if type -p paxctl-ng > /dev/null && paxctl-ng -l; then
+                einfo "XATTR_PAX marking -${flags} ${f} with paxctl-ng";
+                [[ ${dodefault} == "yes" ]] && paxctl-ng -d "${f}" > /dev/null 2>&1;
+                [[ -n "${flags}" ]] || continue;
+                paxctl-ng -l -${flags} "${f}" > /dev/null 2>&1 && continue;
+            fi;
+            if type -p setfattr > /dev/null; then
+                [[ -n "${flags//[!Ee]}" ]] || flags+="e";
+                einfo "XATTR_PAX marking -${flags} ${f} with setfattr";
+                [[ ${dodefault} == "yes" ]] && setfattr -x "user.pax.flags" "${f}" > /dev/null 2>&1;
+                setfattr -n "user.pax.flags" -v "${flags}" "${f}" > /dev/null 2>&1 && continue;
+            fi;
+            if [[ ${PAX_MARKINGS} != "none" ]]; then
+                elog "Failed to set XATTR_PAX markings -${flags} ${f}.";
+                ret=1;
+            fi;
+        done;
+    fi;
+    return ${ret}
+}
+pkg_nofetch () 
+{ 
+    default
+}
+pkg_postinst () 
+{ 
+    toolchain_pkg_postinst "$@"
+}
+pkg_postrm () 
+{ 
+    toolchain_pkg_postrm "$@"
+}
+pkg_pretend () 
+{ 
+    toolchain_pkg_pretend "$@"
+}
+pkg_setup () 
+{ 
+    toolchain_pkg_setup "$@"
+}
+prefixify_ro () 
+{ 
+    if [[ -e $1 ]]; then
+        local f=${1##*/};
+        cp "$1" "${T}" || die "failed to copy file";
+        local x="${T}"/${f};
+        if grep -qs @GENTOO_PORTAGE_EPREFIX@ "${x}"; then
+            eprefixify "${T}"/${f} 1>&2;
+        else
+            hprefixify "${T}"/${f} 1>&2;
+        fi;
+        echo "${x}";
+    else
+        die "$1 does not exist";
+    fi
+}
+raw-ldflags () 
+{ 
+    local x input="$@";
+    [[ -z ${input} ]] && input=${LDFLAGS};
+    set --;
+    for x in ${input};
+    do
+        case ${x} in 
+            -Wl,*)
+                x=${x#-Wl,};
+                set -- "$@" ${x//,/ }
+            ;;
+            *)
+
+            ;;
+        esac;
+    done;
+    echo "$@"
+}
+replace-cpu-flags () 
+{ 
+    local newcpu="$#";
+    newcpu="${!newcpu}";
+    while [ $# -gt 1 ]; do
+        replace-flags "-march=${1}" "-march=${newcpu}";
+        replace-flags "-mcpu=${1}" "-mcpu=${newcpu}";
+        replace-flags "-mtune=${1}" "-mtune=${newcpu}";
+        shift;
+    done;
+    return 0
+}
+replace-flags () 
+{ 
+    [[ $# != 2 ]] && die "Usage: replace-flags <old flag> <new flag>";
+    local f var new;
+    for var in $(all-flag-vars);
+    do
+        new=();
+        for f in ${!var};
+        do
+            [[ ${f} == ${1} ]] && f=${2};
+            new+=("${f}");
+        done;
+        export ${var}="${new[*]}";
+    done;
+    return 0
+}
+replace-sparc64-flags () 
+{ 
+    [[ $# -ne 0 ]] && die "replace-sparc64-flags takes no arguments";
+    local SPARC64_CPUS="ultrasparc3 ultrasparc v9";
+    if [ "${CFLAGS/mtune}" != "${CFLAGS}" ]; then
+        for x in ${SPARC64_CPUS};
+        do
+            CFLAGS="${CFLAGS/-mcpu=${x}/-mcpu=v8}";
+        done;
+    else
+        for x in ${SPARC64_CPUS};
+        do
+            CFLAGS="${CFLAGS/-mcpu=${x}/-mcpu=v8 -mtune=${x}}";
+        done;
+    fi;
+    if [ "${CXXFLAGS/mtune}" != "${CXXFLAGS}" ]; then
+        for x in ${SPARC64_CPUS};
+        do
+            CXXFLAGS="${CXXFLAGS/-mcpu=${x}/-mcpu=v8}";
+        done;
+    else
+        for x in ${SPARC64_CPUS};
+        do
+            CXXFLAGS="${CXXFLAGS/-mcpu=${x}/-mcpu=v8 -mtune=${x}}";
+        done;
+    fi;
+    export CFLAGS CXXFLAGS
+}
+setup-allowed-flags () 
+{ 
+    [[ ${EAPI} == [67] ]] || die "Internal function ${FUNCNAME} is not available in EAPI ${EAPI}.";
+    _setup-allowed-flags "$@"
+}
+setup_minispecs_gcc_build_specs () 
+{ 
+    if hardened_gcc_works pie; then
+        cat "${WORKDIR}"/specs/pie.specs >> "${WORKDIR}"/build.specs;
+    fi;
+    if hardened_gcc_works ssp; then
+        for s in ssp sspall;
+        do
+            cat "${WORKDIR}"/specs/${s}.specs >> "${WORKDIR}"/build.specs;
+        done;
+    fi;
+    for s in nostrict znow;
+    do
+        cat "${WORKDIR}"/specs/${s}.specs >> "${WORKDIR}"/build.specs;
+    done;
+    export GCC_SPECS="${WORKDIR}"/build.specs
+}
+setup_multilib_osdirnames () 
+{ 
+    is_multilib || return 0;
+    local config;
+    local libdirs="../lib64 ../lib32";
+    case ${CTARGET} in 
+        x86_64*-linux*)
+            config="i386"
+        ;;
+        powerpc64*-linux*)
+            config="rs6000"
+        ;;
+        sparc64*-linux*)
+            config="sparc"
+        ;;
+        s390x*-linux*)
+            config="s390"
+        ;;
+        *)
+            return 0
+        ;;
+    esac;
+    config+="/t-linux64";
+    local sed_args=();
+    if tc_version_is_at_least 4.6; then
+        sed_args+=(-e 's:$[(]call if_multiarch[^)]*[)]::g');
+    fi;
+    if [[ ${SYMLINK_LIB} == "yes" ]]; then
+        einfo "Updating multilib directories to be: ${libdirs}";
+        if tc_version_is_at_least 4.6.4 || tc_version_is_at_least 4.7; then
+            sed_args+=(-e '/^MULTILIB_OSDIRNAMES.*lib32/s:[$][(]if.*):../lib32:');
+        else
+            sed_args+=(-e "/^MULTILIB_OSDIRNAMES/s:=.*:= ${libdirs}:");
+        fi;
+    else
+        einfo "Using upstream multilib; disabling lib32 autodetection";
+        sed_args+=(-r -e 's:[$][(]if.*,(.*)[)]:\1:');
+    fi;
+    sed -i "${sed_args[@]}" "${S}"/gcc/config/${config} || die
+}
+should_we_gcc_config () 
+{ 
+    local curr_config;
+    curr_config=$(gcc-config -c ${CTARGET} 2>&1) || return 0;
+    local curr_config_ver=$(gcc-config -S ${curr_config} | awk '{print $2}');
+    local curr_branch_ver=$(ver_cut 1-2 ${curr_config_ver});
+    if [[ ${curr_branch_ver} == ${GCC_BRANCH_VER} ]]; then
+        return 0;
+    else
+        if [[ ${EBUILD_PHASE} == *"inst" ]]; then
+            einfo "The current gcc config appears valid, so it will not be";
+            einfo "automatically switched for you.  If you would like to";
+            einfo "switch to the newly installed gcc version, do the";
+            einfo "following:";
+            echo;
+            einfo "gcc-config ${CTARGET}-${GCC_CONFIG_VER}";
+            einfo "source /etc/profile";
+            echo;
+        fi;
+        return 1;
+    fi
+}
+src_compile () 
+{ 
+    toolchain_src_compile "$@"
+}
+src_configure () 
+{ 
+    toolchain_src_configure "$@"
+}
+src_install () 
+{ 
+    toolchain_src_install "$@"
+}
+src_prepare () 
+{ 
+    toolchain_src_prepare;
+    eapply_user
+}
+src_test () 
+{ 
+    toolchain_src_test "$@"
+}
+src_unpack () 
+{ 
+    toolchain_src_unpack "$@"
+}
+strip-flags () 
+{ 
+    [[ $# -ne 0 ]] && die "strip-flags takes no arguments";
+    local x y var;
+    local ALLOWED_FLAGS;
+    _setup-allowed-flags;
+    set -f;
+    for var in $(all-flag-vars);
+    do
+        local new=();
+        for x in ${!var};
+        do
+            for y in "${ALLOWED_FLAGS[@]}";
+            do
+                if [[ ${x} == ${y} ]]; then
+                    new+=("${x}");
+                    break;
+                fi;
+            done;
+        done;
+        if _is_flagq ${var} "-O*" && ! _is_flagq new "-O*"; then
+            new+=(-O2);
+        fi;
+        if [[ ${!var} != "${new[*]}" ]]; then
+            einfo "strip-flags: ${var}: changed '${!var}' to '${new[*]}'";
+        fi;
+        export ${var}="${new[*]}";
+    done;
+    set +f;
+    return 0
+}
+strip-unsupported-flags () 
+{ 
+    [[ $# -ne 0 ]] && die "strip-unsupported-flags takes no arguments";
+    export CFLAGS=$(test-flags-CC ${CFLAGS});
+    export CXXFLAGS=$(test-flags-CXX ${CXXFLAGS});
+    export FFLAGS=$(test-flags-F77 ${FFLAGS});
+    export FCFLAGS=$(test-flags-FC ${FCFLAGS});
+    export LDFLAGS=$(test-flags-CCLD ${LDFLAGS})
+}
+tc-arch () 
+{ 
+    tc-ninja_magic_to_arch portage "$@"
+}
+tc-arch-kernel () 
+{ 
+    tc-ninja_magic_to_arch kern "$@"
+}
+tc-check-openmp () 
+{ 
+    if ! _tc-has-openmp; then
+        eerror "Your current compiler does not support OpenMP!";
+        if tc-is-gcc; then
+            eerror "Enable OpenMP support by building sys-devel/gcc with USE=\"openmp\".";
+        else
+            if tc-is-clang; then
+                eerror "OpenMP support in sys-devel/clang is provided by sys-libs/libomp.";
+            fi;
+        fi;
+        die "Active compiler does not have required support for OpenMP";
+    fi
+}
+tc-cpp-is-true () 
+{ 
+    local CONDITION=${1};
+    shift;
+    $(tc-getTARGET_CPP) "${@}" -P - <<-EOF > /dev/null 2>&1
+#if ${CONDITION}
+true
+#else
+#error false
+#endif
+EOF
+
+}
+tc-detect-is-softfloat () 
+{ 
+    [[ $(tc-getTARGET_CPP) == "gcc -E" ]] && return 1;
+    case ${CTARGET:-${CHOST}} in 
+        *-newlib | *-elf | *-eabi)
+            return 1
+        ;;
+        arm*)
+            if tc-cpp-is-true "defined(__ARM_PCS_VFP)"; then
+                echo "no";
+            else
+                if tc-cpp-is-true "defined(__SOFTFP__)"; then
+                    echo "yes";
+                else
+                    echo "softfp";
+                fi;
+            fi;
+            return 0
+        ;;
+        *)
+            return 1
+        ;;
+    esac
+}
+tc-enables-pie () 
+{ 
+    tc-cpp-is-true "defined(__PIE__)" ${CPPFLAGS} ${CFLAGS}
+}
+tc-enables-ssp () 
+{ 
+    tc-cpp-is-true "defined(__SSP__) || defined(__SSP_STRONG__) || defined(__SSP_ALL__)" ${CPPFLAGS} ${CFLAGS}
+}
+tc-enables-ssp-all () 
+{ 
+    tc-cpp-is-true "defined(__SSP_ALL__)" ${CPPFLAGS} ${CFLAGS}
+}
+tc-enables-ssp-strong () 
+{ 
+    tc-cpp-is-true "defined(__SSP_STRONG__) || defined(__SSP_ALL__)" ${CPPFLAGS} ${CFLAGS}
+}
+tc-endian () 
+{ 
+    local host=$1;
+    [[ -z ${host} ]] && host=${CTARGET:-${CHOST}};
+    host=${host%%-*};
+    case ${host} in 
+        aarch64*be)
+            echo big
+        ;;
+        aarch64)
+            echo little
+        ;;
+        alpha*)
+            echo little
+        ;;
+        arm*b*)
+            echo big
+        ;;
+        arm*)
+            echo little
+        ;;
+        cris*)
+            echo little
+        ;;
+        hppa*)
+            echo big
+        ;;
+        i?86*)
+            echo little
+        ;;
+        ia64*)
+            echo little
+        ;;
+        loongarch*)
+            echo little
+        ;;
+        m68*)
+            echo big
+        ;;
+        mips*l*)
+            echo little
+        ;;
+        mips*)
+            echo big
+        ;;
+        powerpc*le)
+            echo little
+        ;;
+        powerpc*)
+            echo big
+        ;;
+        riscv*)
+            echo little
+        ;;
+        s390*)
+            echo big
+        ;;
+        sh*b*)
+            echo big
+        ;;
+        sh*)
+            echo little
+        ;;
+        sparc*)
+            echo big
+        ;;
+        x86_64*)
+            echo little
+        ;;
+        *)
+            echo wtf
+        ;;
+    esac
+}
+tc-env_build () 
+{ 
+    tc-export_build_env;
+    CFLAGS=${BUILD_CFLAGS} CXXFLAGS=${BUILD_CXXFLAGS} CPPFLAGS=${BUILD_CPPFLAGS} LDFLAGS=${BUILD_LDFLAGS} AR=$(tc-getBUILD_AR) AS=$(tc-getBUILD_AS) CC=$(tc-getBUILD_CC) CPP=$(tc-getBUILD_CPP) CXX=$(tc-getBUILD_CXX) LD=$(tc-getBUILD_LD) NM=$(tc-getBUILD_NM) PKG_CONFIG=$(tc-getBUILD_PKG_CONFIG) RANLIB=$(tc-getBUILD_RANLIB) READELF=$(tc-getBUILD_READELF) "$@"
+}
+tc-export () 
+{ 
+    local var;
+    for var in "$@";
+    do
+        [[ $(type -t "tc-get${var}") != "function" ]] && die "tc-export: invalid export variable '${var}'";
+        "tc-get${var}" > /dev/null;
+    done
+}
+tc-export_build_env () 
+{ 
+    tc-export "$@";
+    if tc-is-cross-compiler; then
+        : ${BUILD_CFLAGS:=-O1 -pipe};
+        : ${BUILD_CXXFLAGS:=-O1 -pipe};
+        : ${BUILD_CPPFLAGS:= };
+        : ${BUILD_LDFLAGS:= };
+    else
+        : ${BUILD_CFLAGS:=${CFLAGS}};
+        : ${BUILD_CXXFLAGS:=${CXXFLAGS}};
+        : ${BUILD_CPPFLAGS:=${CPPFLAGS}};
+        : ${BUILD_LDFLAGS:=${LDFLAGS}};
+    fi;
+    export BUILD_{C,CXX,CPP,LD}FLAGS;
+    local v;
+    for v in BUILD_{C,CXX,CPP,LD}FLAGS;
+    do
+        export ${v#BUILD_}_FOR_BUILD="${!v}";
+    done
+}
+tc-get-c-rtlib () 
+{ 
+    local res=$(
+		$(tc-getCC) ${CFLAGS} ${CPPFLAGS} ${LDFLAGS} 			-print-libgcc-file-name 2>/dev/null
+	);
+    case ${res} in 
+        *libclang_rt*)
+            echo compiler-rt
+        ;;
+        *libgcc*)
+            echo libgcc
+        ;;
+        *)
+            return 1
+        ;;
+    esac;
+    return 0
+}
+tc-get-compiler-type () 
+{ 
+    local code='
+#if defined(__PATHSCALE__)
+	HAVE_PATHCC
+#elif defined(__clang__)
+	HAVE_CLANG
+#elif defined(__GNUC__)
+	HAVE_GCC
+#endif
+';
+    local res=$($(tc-getCPP "$@") -E -P - <<<"${code}");
+    case ${res} in 
+        *HAVE_PATHCC*)
+            echo pathcc
+        ;;
+        *HAVE_CLANG*)
+            echo clang
+        ;;
+        *HAVE_GCC*)
+            echo gcc
+        ;;
+        *)
+            echo unknown
+        ;;
+    esac
+}
+tc-get-cxx-stdlib () 
+{ 
+    local code='#include <ciso646>
+
+#if defined(_LIBCPP_VERSION)
+	HAVE_LIBCXX
+#elif defined(__GLIBCXX__)
+	HAVE_LIBSTDCPP
+#endif
+';
+    local res=$(
+		$(tc-getCXX) ${CXXFLAGS} ${CPPFLAGS} -x c++ -E -P - 			<<<"${code}" 2>/dev/null
+	);
+    case ${res} in 
+        *HAVE_LIBCXX*)
+            echo libc++
+        ;;
+        *HAVE_LIBSTDCPP*)
+            echo libstdc++
+        ;;
+        *)
+            return 1
+        ;;
+    esac;
+    return 0
+}
+tc-getAR () 
+{ 
+    tc-getPROG AR ar "$@"
+}
+tc-getAS () 
+{ 
+    tc-getPROG AS as "$@"
+}
+tc-getBUILD_AR () 
+{ 
+    tc-getBUILD_PROG AR ar "$@"
+}
+tc-getBUILD_AS () 
+{ 
+    tc-getBUILD_PROG AS as "$@"
+}
+tc-getBUILD_CC () 
+{ 
+    tc-getBUILD_PROG CC gcc "$@"
+}
+tc-getBUILD_CPP () 
+{ 
+    tc-getBUILD_PROG CPP "$(tc-getBUILD_CC) -E" "$@"
+}
+tc-getBUILD_CXX () 
+{ 
+    tc-getBUILD_PROG CXX g++ "$@"
+}
+tc-getBUILD_LD () 
+{ 
+    tc-getBUILD_PROG LD ld "$@"
+}
+tc-getBUILD_NM () 
+{ 
+    tc-getBUILD_PROG NM nm "$@"
+}
+tc-getBUILD_OBJCOPY () 
+{ 
+    tc-getBUILD_PROG OBJCOPY objcopy "$@"
+}
+tc-getBUILD_PKG_CONFIG () 
+{ 
+    tc-getBUILD_PROG PKG_CONFIG pkg-config "$@"
+}
+tc-getBUILD_PROG () 
+{ 
+    local vars="BUILD_$1 $1_FOR_BUILD HOST$1";
+    tc-is-cross-compiler || vars+=" $1";
+    _tc-getPROG CBUILD "${vars}" "${@:2}"
+}
+tc-getBUILD_RANLIB () 
+{ 
+    tc-getBUILD_PROG RANLIB ranlib "$@"
+}
+tc-getBUILD_READELF () 
+{ 
+    tc-getBUILD_PROG READELF readelf "$@"
+}
+tc-getBUILD_STRINGS () 
+{ 
+    tc-getBUILD_PROG STRINGS strings "$@"
+}
+tc-getBUILD_STRIP () 
+{ 
+    tc-getBUILD_PROG STRIP strip "$@"
+}
+tc-getCC () 
+{ 
+    tc-getPROG CC gcc "$@"
+}
+tc-getCPP () 
+{ 
+    tc-getPROG CPP "${CC:-gcc} -E" "$@"
+}
+tc-getCXX () 
+{ 
+    tc-getPROG CXX g++ "$@"
+}
+tc-getDLLWRAP () 
+{ 
+    tc-getPROG DLLWRAP dllwrap "$@"
+}
+tc-getF77 () 
+{ 
+    tc-getPROG F77 gfortran "$@"
+}
+tc-getFC () 
+{ 
+    tc-getPROG FC gfortran "$@"
+}
+tc-getGCJ () 
+{ 
+    tc-getPROG GCJ gcj "$@"
+}
+tc-getGO () 
+{ 
+    tc-getPROG GO gccgo "$@"
+}
+tc-getLD () 
+{ 
+    tc-getPROG LD ld "$@"
+}
+tc-getNM () 
+{ 
+    tc-getPROG NM nm "$@"
+}
+tc-getOBJCOPY () 
+{ 
+    tc-getPROG OBJCOPY objcopy "$@"
+}
+tc-getOBJDUMP () 
+{ 
+    tc-getPROG OBJDUMP objdump "$@"
+}
+tc-getPKG_CONFIG () 
+{ 
+    tc-getPROG PKG_CONFIG pkg-config "$@"
+}
+tc-getPROG () 
+{ 
+    _tc-getPROG CHOST "$@"
+}
+tc-getRANLIB () 
+{ 
+    tc-getPROG RANLIB ranlib "$@"
+}
+tc-getRC () 
+{ 
+    tc-getPROG RC windres "$@"
+}
+tc-getREADELF () 
+{ 
+    tc-getPROG READELF readelf "$@"
+}
+tc-getSTRINGS () 
+{ 
+    tc-getPROG STRINGS strings "$@"
+}
+tc-getSTRIP () 
+{ 
+    tc-getPROG STRIP strip "$@"
+}
+tc-getTARGET_CPP () 
+{ 
+    if [[ -n ${CTARGET} ]]; then
+        _tc-getPROG CTARGET TARGET_CPP "gcc -E" "$@";
+    else
+        tc-getCPP "$@";
+    fi
+}
+tc-has-openmp () 
+{ 
+    _tc-has-openmp "$@"
+}
+tc-has-tls () 
+{ 
+    local base="${T}/test-tc-tls";
+    cat <<-EOF > "${base}.c"
+int foo(int *i) {
+static __thread int j = 0;
+return *i ? j : *i;
+}
+EOF
+
+    local flags;
+    case $1 in 
+        -s)
+            flags="-S"
+        ;;
+        -c)
+            flags="-c"
+        ;;
+        -l)
+
+        ;;
+        -*)
+            die "Usage: tc-has-tls [-c|-l] [toolchain prefix]"
+        ;;
+    esac;
+    : ${flags:=-fPIC -shared -Wl,-z,defs};
+    [[ $1 == -* ]] && shift;
+    $(tc-getCC "$@") ${flags} "${base}.c" -o "${base}" &> /dev/null;
+    local ret=$?;
+    rm -f "${base}"*;
+    return ${ret}
+}
+tc-is-clang () 
+{ 
+    [[ $(tc-get-compiler-type) == clang ]]
+}
+tc-is-cross-compiler () 
+{ 
+    [[ ${CBUILD:-${CHOST}} != ${CHOST} ]]
+}
+tc-is-gcc () 
+{ 
+    [[ $(tc-get-compiler-type) == gcc ]]
+}
+tc-is-softfloat () 
+{ 
+    tc-detect-is-softfloat || tc-tuple-is-softfloat
+}
+tc-is-static-only () 
+{ 
+    local host=${CTARGET:-${CHOST}};
+    [[ ${host} == *-mint* ]]
+}
+tc-ld-disable-gold () 
+{ 
+    tc-ld-is-gold "$@" && tc-ld-force-bfd "$@"
+}
+tc-ld-force-bfd () 
+{ 
+    if ! tc-ld-is-gold "$@" && ! tc-ld-is-lld "$@"; then
+        return;
+    fi;
+    ewarn "Forcing usage of the BFD linker";
+    local ld=$(tc-getLD "$@");
+    local bfd_ld="${ld%% *}.bfd";
+    local path_ld=$(which "${bfd_ld}" 2>/dev/null);
+    [[ -e ${path_ld} ]] && export LD=${bfd_ld};
+    local fallback="true";
+    if tc-is-gcc; then
+        local major=$(gcc-major-version "$@");
+        local minor=$(gcc-minor-version "$@");
+        if [[ ${major} -gt 4 ]] || [[ ${major} -eq 4 && ${minor} -ge 8 ]]; then
+            export LDFLAGS="${LDFLAGS} -fuse-ld=bfd";
+            fallback="false";
+        fi;
+    else
+        if tc-is-clang; then
+            local major=$(clang-major-version "$@");
+            local minor=$(clang-minor-version "$@");
+            if [[ ${major} -gt 3 ]] || [[ ${major} -eq 3 && ${minor} -ge 5 ]]; then
+                export LDFLAGS="${LDFLAGS} -fuse-ld=bfd";
+                fallback="false";
+            fi;
+        fi;
+    fi;
+    if [[ ${fallback} == "true" ]]; then
+        if [[ -e ${path_ld} ]]; then
+            local d="${T}/bfd-linker";
+            mkdir -p "${d}";
+            ln -sf "${path_ld}" "${d}"/ld;
+            export LDFLAGS="${LDFLAGS} -B${d}";
+        else
+            die "unable to locate a BFD linker";
+        fi;
+    fi
+}
+tc-ld-is-gold () 
+{ 
+    local out;
+    local -x LC_ALL=C;
+    out=$($(tc-getLD "$@") --version 2>&1);
+    if [[ ${out} == *"GNU gold"* ]]; then
+        return 0;
+    fi;
+    local base="${T}/test-tc-gold";
+    cat <<-EOF > "${base}.c"
+int main() { return 0; }
+EOF
+
+    out=$($(tc-getCC "$@") ${CFLAGS} ${CPPFLAGS} ${LDFLAGS} -Wl,--version "${base}.c" -o "${base}" 2>&1);
+    rm -f "${base}"*;
+    if [[ ${out} == *"GNU gold"* ]]; then
+        return 0;
+    fi;
+    return 1
+}
+tc-ld-is-lld () 
+{ 
+    local out;
+    local -x LC_ALL=C;
+    out=$($(tc-getLD "$@") --version 2>&1);
+    if [[ ${out} == *"LLD"* ]]; then
+        return 0;
+    fi;
+    local base="${T}/test-tc-lld";
+    cat <<-EOF > "${base}.c"
+int main() { return 0; }
+EOF
+
+    out=$($(tc-getCC "$@") ${CFLAGS} ${CPPFLAGS} ${LDFLAGS} -Wl,--version "${base}.c" -o "${base}" 2>&1);
+    rm -f "${base}"*;
+    if [[ ${out} == *"LLD"* ]]; then
+        return 0;
+    fi;
+    return 1
+}
+tc-ninja_magic_to_arch () 
+{ 
+    function ninj () 
+    { 
+        [[ ${type} == "kern" ]] && echo $1 || echo $2
+    };
+    local type=$1;
+    local host=$2;
+    [[ -z ${host} ]] && host=${CTARGET:-${CHOST}};
+    case ${host} in 
+        aarch64*)
+            echo arm64
+        ;;
+        alpha*)
+            echo alpha
+        ;;
+        arm*)
+            echo arm
+        ;;
+        avr*)
+            ninj avr32 avr
+        ;;
+        bfin*)
+            ninj blackfin bfin
+        ;;
+        c6x*)
+            echo c6x
+        ;;
+        cris*)
+            echo cris
+        ;;
+        frv*)
+            echo frv
+        ;;
+        hexagon*)
+            echo hexagon
+        ;;
+        hppa*)
+            ninj parisc hppa
+        ;;
+        i?86*)
+            if [[ ${type} == "kern" && ${host} == *freebsd* ]]; then
+                echo i386;
+            else
+                echo x86;
+            fi
+        ;;
+        ia64*)
+            echo ia64
+        ;;
+        loongarch*)
+            ninj loongarch loong
+        ;;
+        m68*)
+            echo m68k
+        ;;
+        metag*)
+            echo metag
+        ;;
+        microblaze*)
+            echo microblaze
+        ;;
+        mips*)
+            echo mips
+        ;;
+        nios2*)
+            echo nios2
+        ;;
+        nios*)
+            echo nios
+        ;;
+        or1k* | or32*)
+            echo openrisc
+        ;;
+        powerpc*)
+            if [[ ${type} == "kern" ]]; then
+                echo powerpc;
+            else
+                if [[ ${host} == powerpc64* ]]; then
+                    echo ppc64;
+                else
+                    echo ppc;
+                fi;
+            fi
+        ;;
+        riscv*)
+            echo riscv
+        ;;
+        s390*)
+            echo s390
+        ;;
+        score*)
+            echo score
+        ;;
+        sh64*)
+            ninj sh64 sh
+        ;;
+        sh*)
+            echo sh
+        ;;
+        sparc64*)
+            ninj sparc64 sparc
+        ;;
+        sparc*)
+            [[ ${PROFILE_ARCH} == "sparc64" ]] && ninj sparc64 sparc || echo sparc
+        ;;
+        tile*)
+            echo tile
+        ;;
+        vax*)
+            echo vax
+        ;;
+        x86_64*freebsd*)
+            echo amd64
+        ;;
+        x86_64*)
+            if [[ ${type} == "kern" ]]; then
+                echo x86;
+            else
+                echo amd64;
+            fi
+        ;;
+        xtensa*)
+            echo xtensa
+        ;;
+        *)
+            echo unknown
+        ;;
+    esac
+}
+tc-stack-grows-down () 
+{ 
+    case ${ARCH} in 
+        hppa | metag)
+            return 1
+        ;;
+    esac;
+    return 0
+}
+tc-tuple-is-softfloat () 
+{ 
+    local CTARGET=${CTARGET:-${CHOST}};
+    case ${CTARGET//_/-} in 
+        bfin* | h8300*)
+            echo "only"
+        ;;
+        *-softfloat-*)
+            echo "yes"
+        ;;
+        *-softfp-*)
+            echo "softfp"
+        ;;
+        arm*-hardfloat-* | arm*eabihf)
+            echo "no"
+        ;;
+        *-newlib | *-elf | *-eabi)
+            echo "no"
+        ;;
+        arm*)
+            echo "yes"
+        ;;
+        *)
+            echo "no"
+        ;;
+    esac
+}
+tc_has_feature () 
+{ 
+    has "$1" "${TC_FEATURES[@]}"
+}
+tc_is_live () 
+{ 
+    [[ ${PV} == *9999* ]]
+}
+tc_use_major_version_only () 
+{ 
+    local use_major_version_only=0;
+    if ! tc_version_is_at_least 10; then
+        return 1;
+    fi;
+    if [[ ${GCCMAJOR} -eq 10 ]] && ver_test ${PV} -ge 10.4.1_p20220929; then
+        use_major_version_only=1;
+    else
+        if [[ ${GCCMAJOR} -eq 11 ]] && ver_test ${PV} -ge 11.3.1_p20220930; then
+            use_major_version_only=1;
+        else
+            if [[ ${GCCMAJOR} -eq 12 ]] && ver_test ${PV} -ge 12.2.1_p20221001; then
+                use_major_version_only=1;
+            else
+                if [[ ${GCCMAJOR} -eq 13 ]] && ver_test ${PV} -ge 13.0.0_pre20221002; then
+                    use_major_version_only=1;
+                else
+                    if [[ ${GCCMAJOR} -gt 13 ]]; then
+                        use_major_version_only=1;
+                    fi;
+                fi;
+            fi;
+        fi;
+    fi;
+    if [[ ${use_major_version_only} -eq 1 ]]; then
+        return 0;
+    fi;
+    return 1
+}
+tc_version_is_at_least () 
+{ 
+    ver_test "${2:-${GCC_RELEASE_VER}}" -ge "$1"
+}
+tc_version_is_between () 
+{ 
+    tc_version_is_at_least "${1}" && ! tc_version_is_at_least "${2}"
+}
+test-flag-CC () 
+{ 
+    _test-flag-PROG CC c "$@"
+}
+test-flag-CCLD () 
+{ 
+    _test-flag-PROG CC c+ld "$@"
+}
+test-flag-CXX () 
+{ 
+    _test-flag-PROG CXX c++ "$@"
+}
+test-flag-F77 () 
+{ 
+    _test-flag-PROG F77 f77 "$@"
+}
+test-flag-FC () 
+{ 
+    _test-flag-PROG FC f95 "$@"
+}
+test-flag-PROG () 
+{ 
+    [[ ${EAPI} == [67] ]] || die "Internal function ${FUNCNAME} is not available in EAPI ${EAPI}.";
+    _test-flag-PROG "$@"
+}
+test-flags () 
+{ 
+    test-flags-CC "$@"
+}
+test-flags-CC () 
+{ 
+    _test-flags-PROG CC "$@"
+}
+test-flags-CCLD () 
+{ 
+    _test-flags-PROG CCLD "$@"
+}
+test-flags-CXX () 
+{ 
+    _test-flags-PROG CXX "$@"
+}
+test-flags-F77 () 
+{ 
+    _test-flags-PROG F77 "$@"
+}
+test-flags-FC () 
+{ 
+    _test-flags-PROG FC "$@"
+}
+test-flags-PROG () 
+{ 
+    [[ ${EAPI} == [67] ]] || die "Internal function ${FUNCNAME} is not available in EAPI ${EAPI}.";
+    _test-flags-PROG "$@"
+}
+test_version_info () 
+{ 
+    if [[ $($(tc-getCC) --version 2>&1) == *$1* ]]; then
+        return 0;
+    else
+        return 1;
+    fi
+}
+toolchain_death_notice () 
+{ 
+    if [[ -e "${WORKDIR}"/build ]]; then
+        pushd "${WORKDIR}"/build > /dev/null;
+        ( echo '' | $(tc-getCC ${CTARGET}) ${CFLAGS} -v -E - 2>&1 ) > gccinfo.log;
+        [[ -e "${T}"/build.log ]] && cp "${T}"/build.log .;
+        tar jcf "${WORKDIR}"/gcc-build-logs.tar.bz2 gccinfo.log build.log $(find -name config.log);
+        rm gccinfo.log build.log;
+        eerror;
+        eerror "Please include ${WORKDIR}/gcc-build-logs.tar.bz2 in your bug report.";
+        eerror;
+        popd > /dev/null;
+    fi
+}
+toolchain_fetch_git_patches () 
+{ 
+    local gcc_patches_repo="https://anongit.gentoo.org/git/proj/gcc-patches.git https://github.com/gentoo/gcc-patches";
+    einfo "Fetching patchset from git as PATCH_VER is unset";
+    EGIT_REPO_URI=${gcc_patches_repo} EGIT_BRANCH="master" EGIT_CHECKOUT_DIR="${WORKDIR}"/patch.tmp git-r3_src_unpack;
+    mkdir "${WORKDIR}"/patch || die;
+    mv "${WORKDIR}"/patch.tmp/${PATCH_GCC_VER}/gentoo/* "${WORKDIR}"/patch || die;
+    if [[ -n ${MUSL_VER} || -d "${WORKDIR}"/musl ]] && [[ ${CTARGET} == *musl* ]]; then
+        mkdir "${WORKDIR}"/musl || die;
+        mv "${WORKDIR}"/patch.tmp/${PATCH_GCC_VER}/musl/* "${WORKDIR}"/musl || die;
+    fi
+}
+toolchain_pkg_postinst () 
+{ 
+    do_gcc_config;
+    if [[ ! -n ${ROOT} && -f ${EPREFIX}/usr/share/eselect/modules/compiler-shadow.eselect ]]; then
+        eselect compiler-shadow update all;
+    fi;
+    if ! is_crosscompile && [[ ${PN} != "kgcc64" ]]; then
+        rm -f "${EROOT}"/sbin/fix_libtool_files.sh;
+        rm -f "${EROOT}"/usr/sbin/fix_libtool_files.sh;
+        rm -f "${EROOT}"/usr/share/gcc-data/fixlafiles.awk;
+    fi
+}
+toolchain_pkg_postrm () 
+{ 
+    do_gcc_config;
+    if [[ ! -n ${ROOT} && -f ${EPREFIX}/usr/share/eselect/modules/compiler-shadow.eselect ]]; then
+        eselect compiler-shadow clean all;
+    fi;
+    if is_crosscompile; then
+        if [[ -z $(ls "${EROOT}"/etc/env.d/gcc/${CTARGET}* 2>/dev/null) ]]; then
+            einfo "Removing last cross-compiler instance. Deleting dangling symlinks.";
+            rm -f "${EROOT}"/etc/env.d/gcc/config-${CTARGET};
+            rm -f "${EROOT}"/etc/env.d/??gcc-${CTARGET};
+            rm -f "${EROOT}"/usr/bin/${CTARGET}-{gcc,{g,c}++}{,32,64};
+        fi;
+        return 0;
+    fi;
+    rm -f "${EROOT}"/sbin/fix_libtool_files.sh;
+    rm -f "${EROOT}"/usr/share/gcc-data/fixlafiles.awk
+}
+toolchain_pkg_pretend () 
+{ 
+    if ! _tc_use_if_iuse cxx; then
+        _tc_use_if_iuse go && ewarn 'Go requires a C++ compiler, disabled due to USE="-cxx"';
+        _tc_use_if_iuse objc++ && ewarn 'Obj-C++ requires a C++ compiler, disabled due to USE="-cxx"';
+        _tc_use_if_iuse gcj && ewarn 'GCJ requires a C++ compiler, disabled due to USE="-cxx"';
+    fi;
+    want_minispecs
+}
+toolchain_pkg_setup () 
+{ 
+    unset GCC_SPECS;
+    unset LANGUAGES;
+    MAKEOPTS="--output-sync=line ${MAKEOPTS}"
+}
+toolchain_src_compile () 
+{ 
+    touch "${S}"/gcc/c-gperf.h || die;
+    [[ ! -x /usr/bin/perl ]] && find "${WORKDIR}"/build -name '*.[17]' -exec touch {} +;
+    unset ADAFLAGS;
+    local gcc_shell="${BROOT}"/bin/bash;
+    if tc_version_is_at_least 11.2; then
+        gcc_shell="${BROOT}"/bin/sh;
+    fi;
+    CONFIG_SHELL="${gcc_shell}" gcc_do_make ${GCC_MAKE_TARGET}
+}
+toolchain_src_configure () 
+{ 
+    downgrade_arch_flags;
+    gcc_do_filter_flags;
+    if ! tc_version_is_at_least 11 && [[ $(gcc-major-version) -ge 12 ]]; then
+        export ac_cv_std_swap_in_utility=no;
+    fi;
+    einfo "CFLAGS=\"${CFLAGS}\"";
+    einfo "CXXFLAGS=\"${CXXFLAGS}\"";
+    einfo "LDFLAGS=\"${LDFLAGS}\"";
+    export JAR=no;
+    if ! tc_version_is_at_least 4.4 && want_minispecs; then
+        setup_minispecs_gcc_build_specs;
+    fi;
+    local confgcc=(--host=${CHOST});
+    local build_config_targets=();
+    if is_crosscompile || tc-is-cross-compiler; then
+        confgcc+=(--target=${CTARGET});
+    fi;
+    [[ -n ${CBUILD} ]] && confgcc+=(--build=${CBUILD});
+    confgcc+=(--prefix="${PREFIX}" --bindir="${BINPATH}" --includedir="${INCLUDEPATH}" --datadir="${DATAPATH}" --mandir="${DATAPATH}/man" --infodir="${DATAPATH}/info" --with-gxx-include-dir="${STDCXX_INCDIR}");
+    if tc_version_is_at_least 4.4; then
+        confgcc+=(--with-python-dir=${DATAPATH/$PREFIX/}/python);
+    fi;
+    local GCC_LANG="c";
+    is_cxx && GCC_LANG+=",c++";
+    is_d && GCC_LANG+=",d";
+    is_gcj && GCC_LANG+=",java";
+    is_go && GCC_LANG+=",go";
+    if is_objc || is_objcxx; then
+        GCC_LANG+=",objc";
+        use objc-gc && confgcc+=(--enable-objc-gc);
+        is_objcxx && GCC_LANG+=",obj-c++";
+    fi;
+    is_fortran && GCC_LANG+=",fortran";
+    is_f77 && GCC_LANG+=",f77";
+    is_f95 && GCC_LANG+=",f95";
+    is_ada && GCC_LANG+=",ada";
+    confgcc+=(--enable-languages=${GCC_LANG});
+    confgcc+=(--enable-obsolete --enable-secureplt --disable-werror --with-system-zlib);
+    if use nls; then
+        confgcc+=(--enable-nls --without-included-gettext);
+    else
+        confgcc+=(--disable-nls);
+    fi;
+    confgcc+=(--disable-libunwind-exceptions);
+    if in_iuse debug; then
+        local off=$(tc_version_is_at_least 4.0 && echo release || echo no);
+        confgcc+=(--enable-checking="${GCC_CHECKS_LIST:-$(usex debug yes ${off})}");
+    fi;
+    tc_version_is_at_least 4.3 && confgcc+=(--with-bugurl=https://bugs.gentoo.org/ --with-pkgversion="${BRANDING_GCC_PKGVERSION}");
+    if tc_use_major_version_only; then
+        confgcc+=(--with-gcc-major-version-only);
+    fi;
+    if tc_version_is_at_least 4.4 && want_minispecs && in_iuse hardened; then
+        confgcc+=($(use_enable hardened esp));
+    fi;
+    if tc_version_is_at_least 4.4 && is_cxx; then
+        confgcc+=(--enable-libstdcxx-time);
+    fi;
+    if tc_version_is_at_least 9.1 && _tc_use_if_iuse lto; then
+        build_config_targets+=(bootstrap-lto);
+    fi;
+    if tc_version_is_at_least 12 && _tc_use_if_iuse cet; then
+        build_config_targets+=(bootstrap-cet);
+    fi;
+    if tc_version_is_at_least 6.0 && ! _tc_use_if_iuse pch; then
+        confgcc+=(--disable-libstdcxx-pch);
+    fi;
+    if tc_version_is_between 4.7 4.8 && ! is_cxx; then
+        confgcc+=(--disable-build-with-cxx --disable-build-poststage1-with-cxx);
+    fi;
+    if is_crosscompile; then
+        confgcc+=(--enable-poison-system-directories);
+        local needed_libc="";
+        case ${CTARGET} in 
+            *-linux)
+                needed_libc=error-unknown-libc
+            ;;
+            *-dietlibc)
+                needed_libc=dietlibc
+            ;;
+            *-elf | *-eabi)
+                needed_libc=newlib;
+                confgcc+=(--disable-libstdcxx-time)
+            ;;
+            *-gnu*)
+                needed_libc=glibc
+            ;;
+            *-klibc)
+                needed_libc=klibc
+            ;;
+            *-musl*)
+                needed_libc=musl
+            ;;
+            *-cygwin)
+                needed_libc=cygwin
+            ;;
+            x86_64-*-mingw* | *-w64-mingw*)
+                needed_libc=mingw64-runtime
+            ;;
+            avr)
+                confgcc+=(--enable-shared --disable-threads)
+            ;;
+        esac;
+        if [[ -n ${needed_libc} ]]; then
+            local confgcc_no_libc=(--disable-shared);
+            tc_version_is_at_least 4.6 && confgcc_no_libc+=(--disable-libquadmath);
+            tc_version_is_at_least 4.8 && confgcc_no_libc+=(--disable-libatomic);
+            if ! has_version ${CATEGORY}/${needed_libc}; then
+                confgcc+=("${confgcc_no_libc[@]}" --disable-threads --without-headers);
+                if [[ ${needed_libc} == glibc ]]; then
+                    confgcc+=(--with-long-double-128);
+                fi;
+            else
+                if has_version "${CATEGORY}/${needed_libc}[headers-only(-)]"; then
+                    confgcc+=("${confgcc_no_libc[@]}" --with-sysroot="${PREFIX}"/${CTARGET});
+                else
+                    confgcc+=(--with-sysroot="${PREFIX}"/${CTARGET});
+                fi;
+            fi;
+        fi;
+        confgcc+=(--disable-bootstrap);
+    else
+        if tc-is-static-only; then
+            confgcc+=(--disable-shared);
+        else
+            confgcc+=(--enable-shared);
+        fi;
+        case ${CHOST} in 
+            mingw* | *-mingw*)
+                confgcc+=(--enable-threads=win32)
+            ;;
+            *)
+                confgcc+=(--enable-threads=posix)
+            ;;
+        esac;
+    fi;
+    case ${CTARGET} in 
+        *-elf | *-eabi)
+            confgcc+=(--with-newlib)
+        ;;
+        *-musl*)
+            confgcc+=(--enable-__cxa_atexit)
+        ;;
+        *-gnu*)
+            confgcc+=(--enable-__cxa_atexit --enable-clocale=gnu)
+        ;;
+        *-solaris*)
+            confgcc+=(--enable-__cxa_atexit)
+        ;;
+    esac;
+    gcc-multilib-configure;
+    tc_version_is_at_least 4.3 && in_iuse fixed-point && confgcc+=($(use_enable fixed-point));
+    case $(tc-is-softfloat) in 
+        yes)
+            confgcc+=(--with-float=soft)
+        ;;
+        softfp)
+            confgcc+=(--with-float=softfp)
+        ;;
+        *)
+            case ${CTARGET//_/-} in 
+                *-hardfloat-* | *eabihf)
+                    confgcc+=(--with-float=hard)
+                ;;
+            esac
+        ;;
+    esac;
+    local with_abi_map=();
+    case $(tc-arch) in 
+        arm)
+            local a arm_arch=${CTARGET%%-*};
+            for a in e{b,l} {b,l}e b l;
+            do
+                if [[ ${arm_arch} == *${a} ]]; then
+                    arm_arch=${arm_arch%${a}};
+                    break;
+                fi;
+            done;
+            [[ ${arm_arch} == armv7? ]] && arm_arch=${arm_arch/7/7-};
+            if ( srcdir=${S}/gcc target=${CTARGET} with_arch=${arm_arch};
+            . "${srcdir}"/config.gcc ) &> /dev/null; then
+                confgcc+=(--with-arch=${arm_arch});
+            fi;
+            [[ ${arm_arch} == *-m ]] && confgcc+=(--with-mode=thumb);
+            if [[ $(tc-is-softfloat) == "no" ]] && [[ ${CTARGET} == armv[67]* ]] && tc_version_is_at_least 4.5; then
+                confgcc+=(--with-float=hard);
+                case ${CTARGET} in 
+                    armv6*)
+                        confgcc+=(--with-fpu=vfp)
+                    ;;
+                    armv7*)
+                        confgcc+=(--with-fpu=vfpv3-d16)
+                    ;;
+                esac;
+            fi;
+            if is_multilib && [[ ${arm_arch} == arm ]] && tc_version_is_at_least 7.1; then
+                confgcc+=(--with-multilib-list=aprofile,rmprofile);
+            fi
+        ;;
+        mips)
+            confgcc+=(--with-abi=$(gcc-abi-map ${TARGET_DEFAULT_ABI}))
+        ;;
+        amd64)
+            if tc_version_is_at_least 4.8 && has x32 $(get_all_abis TARGET); then
+                confgcc+=(--with-abi=$(gcc-abi-map ${TARGET_DEFAULT_ABI}));
+            fi
+        ;;
+        x86)
+            confgcc+=(--with-arch=${CTARGET%%-*})
+        ;;
+        hppa)
+            [[ ${GCCMAJOR} == "3" ]] && confgcc+=(--enable-sjlj-exceptions)
+        ;;
+        ppc)
+            is-flagq -mfloat-gprs=double && confgcc+=(--enable-e500-double);
+            [[ ${CTARGET//_/-} == *-e500v2-* ]] && confgcc+=(--enable-e500-double)
+        ;;
+        ppc64)
+            [[ ${CTARGET} == powerpc64-*-musl ]] && confgcc+=(--with-abi=elfv2)
+        ;;
+        riscv)
+            confgcc+=(--with-abi=$(gcc-abi-map ${TARGET_DEFAULT_ABI}))
+        ;;
+    esac;
+    case $(tc-arch) in 
+        ppc | ppc64)
+            confgcc+=(--enable-targets=all)
+        ;;
+        sparc)
+            tc_version_is_at_least 4.4 && confgcc+=(--enable-targets=all)
+        ;;
+        amd64 | x86)
+            tc_version_is_at_least 4.3 && confgcc+=(--enable-targets=all)
+        ;;
+    esac;
+    [[ ${CTARGET} == *-darwin* ]] && confgcc+=(--enable-version-specific-runtime-libs);
+    if tc_version_is_between 3.0 7.0; then
+        if is_gcj; then
+            confgcc+=(--disable-gjdoc);
+            use awt && confgcc+=(--enable-java-awt=gtk);
+        else
+            confgcc+=(--disable-libgcj);
+        fi;
+    fi;
+    if in_iuse openmp; then
+        if ! is_crosscompile || $(tc-getCPP ${CTARGET}) -E - <<< "#include <pthread.h>" &> /dev/null; then
+            confgcc+=($(use_enable openmp libgomp));
+        else
+            confgcc+=(--disable-libgomp);
+        fi;
+    else
+        confgcc+=(--disable-libgomp);
+    fi;
+    if _tc_use_if_iuse libssp; then
+        confgcc+=(--enable-libssp);
+    else
+        if hardened_gcc_is_stable ssp; then
+            export gcc_cv_libc_provides_ssp=yes;
+        fi;
+        if _tc_use_if_iuse ssp; then
+            case ${CTARGET} in 
+                mingw* | *-mingw*)
+                    ewarn "Not disabling libssp"
+                ;;
+                *)
+                    confgcc+=(--disable-libssp)
+                ;;
+            esac;
+        else
+            confgcc+=(--disable-libssp);
+        fi;
+    fi;
+    if in_iuse ada; then
+        confgcc+=(--disable-libada);
+    fi;
+    if in_iuse cet; then
+        confgcc+=($(use_enable cet));
+    fi;
+    if in_iuse cilk; then
+        confgcc+=($(use_enable cilk libcilkrts));
+    fi;
+    if in_iuse mpx; then
+        confgcc+=($(use_enable mpx libmpx));
+    fi;
+    if in_iuse systemtap; then
+        confgcc+=($(use_enable systemtap));
+    fi;
+    if in_iuse valgrind; then
+        confgcc+=($(use_enable valgrind valgrind-annotations));
+    fi;
+    if in_iuse vtv; then
+        confgcc+=($(use_enable vtv vtable-verify) $(usex vtv '' --disable-libvtv));
+    fi;
+    if in_iuse zstd; then
+        confgcc+=($(use_with zstd));
+    fi;
+    if tc_version_is_at_least 4.6; then
+        confgcc+=(--enable-lto);
+    else
+        if tc_version_is_at_least 4.5; then
+            confgcc+=(--disable-lto);
+        fi;
+    fi;
+    if tc_version_is_at_least 6.5 && in_iuse graphite; then
+        confgcc+=($(use_with graphite isl));
+        use graphite && confgcc+=(--disable-isl-version-check);
+    else
+        if tc_version_is_at_least 5.0; then
+            confgcc+=(--without-isl);
+        else
+            if tc_version_is_at_least 4.8; then
+                confgcc+=(--without-cloog);
+            else
+                if tc_version_is_at_least 4.4; then
+                    confgcc+=(--without-{cloog,ppl});
+                fi;
+            fi;
+        fi;
+    fi;
+    if tc_version_is_at_least 4.8; then
+        if in_iuse sanitize; then
+            confgcc+=($(usex sanitize '' --disable-libsanitizer));
+        else
+            confgcc+=(--disable-libsanitizer);
+        fi;
+    fi;
+    if tc_version_is_at_least 6.0 && in_iuse pie; then
+        confgcc+=($(use_enable pie default-pie));
+    fi;
+    if tc_version_is_at_least 6.0 && in_iuse ssp; then
+        confgcc+=($(use_enable ssp default-ssp));
+    fi;
+    if [[ ${PV} != *_p* && -f "${S}"/gcc/doc/gcc.info ]]; then
+        export gcc_cv_prog_makeinfo_modern=no;
+    else
+        ewarn "No pre-generated info pages in tarball. Allowing regeneration with texinfo...";
+        if [[ ${PV} == *_p* && -f "${S}"/gcc/doc/gcc.info ]]; then
+            eqawarn "Snapshot release with pre-generated info pages found!";
+            eqawarn "The BDEPEND in the ebuild should be updated to drop texinfo.";
+        fi;
+    fi;
+    export ac_cv_have_x='have_x=yes ac_x_includes= ac_x_libraries=';
+    confgcc+=("$@" ${EXTRA_ECONF});
+    if [[ -n ${build_config_targets} ]]; then
+        confgcc+=(--with-build-config="${build_config_targets[*]}");
+    fi;
+    echo;
+    einfo "PREFIX:          ${PREFIX}";
+    einfo "BINPATH:         ${BINPATH}";
+    einfo "LIBPATH:         ${LIBPATH}";
+    einfo "DATAPATH:        ${DATAPATH}";
+    einfo "STDCXX_INCDIR:   ${STDCXX_INCDIR}";
+    einfo "Languages:       ${GCC_LANG}";
+    echo;
+    mkdir -p "${WORKDIR}"/build || die;
+    pushd "${WORKDIR}"/build > /dev/null || die;
+    addwrite /dev/zero;
+    local gcc_shell="${BROOT}"/bin/bash;
+    if tc_version_is_at_least 11.2; then
+        gcc_shell="${BROOT}"/bin/sh;
+    fi;
+    if is_jit; then
+        einfo "Configuring JIT gcc";
+        mkdir -p "${WORKDIR}"/build-jit || die;
+        pushd "${WORKDIR}"/build-jit > /dev/null || die;
+        CONFIG_SHELL="${gcc_shell}" edo "${gcc_shell}" "${S}"/configure "${confgcc[@]}" --disable-libada --disable-libsanitizer --disable-libvtv --disable-libgomp --disable-libquadmath --disable-libatomic --disable-lto --disable-bootstrap --enable-host-shared --enable-languages=jit;
+        popd > /dev/null || die;
+    fi;
+    CONFIG_SHELL="${gcc_shell}" edo "${gcc_shell}" "${S}"/configure "${confgcc[@]}";
+    popd > /dev/null || die
+}
+toolchain_src_install () 
+{ 
+    cd "${WORKDIR}"/build || die;
+    find gcc/include*/ -type l -delete || die;
+    mkdir -p gcc/doc || die;
+    local x=;
+    for x in "${S}"/gcc/doc/*.info*;
+    do
+        if [[ -f ${x} ]]; then
+            cp "${x}" gcc/doc/ || die;
+        fi;
+    done;
+    if [[ ${GCCMAJOR} -lt 13 ]]; then
+        while read x; do
+            grep -q 'It has been auto-edited by fixincludes from' "${x}" && rm -f "${x}";
+        done < <(find gcc/include*/ -name '*.h');
+    fi;
+    if is_jit; then
+        pushd "${WORKDIR}"/build-jit > /dev/null || die;
+        S="${WORKDIR}"/build-jit emake DESTDIR="${D}" install;
+        find "${ED}" -name install-tools -prune -type d -exec rm -rf "{}" \;;
+        find "${ED}" -name libiberty.a -delete;
+        gcc_movelibs;
+        popd > /dev/null || die;
+    fi;
+    S="${WORKDIR}"/build emake DESTDIR="${D}" install;
+    find "${ED}" -name install-tools -prune -type d -exec rm -rf "{}" \;;
+    find "${ED}" -name libiberty.a -delete;
+    gcc_movelibs;
+    if ! is_crosscompile; then
+        local EXEEXT;
+        eval $(grep ^EXEEXT= "${WORKDIR}"/build/gcc/config.log);
+        [[ -r ${D}${BINPATH}/gcc${EXEEXT} ]] || die "gcc not found in ${ED}";
+    fi;
+    dodir /etc/env.d/gcc;
+    create_gcc_env_entry;
+    create_revdep_rebuild_entry;
+    want_minispecs && copy_minispecs_gcc_specs;
+    gcc_slot_java;
+    dodir /usr/bin;
+    cd "${D}"${BINPATH} || die;
+    for x in cpp gcc g++ c++ gcov g77 gcj gcjh gfortran gccgo gnat*;
+    do
+        if [[ -f ${x} ]]; then
+            rm -f ${CTARGET}-${x};
+            mv ${x} ${CTARGET}-${x};
+        fi;
+        if [[ -f ${CTARGET}-${x} ]]; then
+            if ! is_crosscompile; then
+                ln -sf ${CTARGET}-${x} ${x};
+                dosym ${BINPATH}/${CTARGET}-${x} /usr/bin/${x}-${GCC_CONFIG_VER};
+            fi;
+            dosym ${BINPATH}/${CTARGET}-${x} /usr/bin/${CTARGET}-${x}-${GCC_CONFIG_VER};
+        fi;
+        if [[ -f ${CTARGET}-${x}-${GCC_CONFIG_VER} ]]; then
+            rm -f ${CTARGET}-${x}-${GCC_CONFIG_VER};
+            ln -sf ${CTARGET}-${x} ${CTARGET}-${x}-${GCC_CONFIG_VER};
+        fi;
+    done;
+    if ! is_crosscompile; then
+        if tc_version_is_at_least 5 && is_go; then
+            for x in go gofmt;
+            do
+                mv ${x} ${x}-${GCCMAJOR} || die;
+            done;
+        fi;
+    fi;
+    is_crosscompile && dostrip -x "${LIBPATH}";
+    cd "${S}" || die;
+    if is_crosscompile; then
+        rm -rf "${ED}"/usr/share/{man,info};
+        rm -rf "${D}"${DATAPATH}/{man,info};
+    else
+        local cxx_mandir=$(find "${WORKDIR}/build/${CTARGET}/libstdc++-v3" -name man);
+        if [[ -d ${cxx_mandir} ]]; then
+            cp -r "${cxx_mandir}"/man? "${D}${DATAPATH}"/man/;
+        fi;
+    fi;
+    if [[ -f "${D}${DATAPATH}"/info/dir ]]; then
+        einfo "Deleting '${D}${DATAPATH}/info/dir'";
+        rm "${D}${DATAPATH}"/info/dir || die;
+    fi;
+    find "${ED}" -depth -type d -delete 2> /dev/null;
+    find "${D}${LIBPATH}" '(' -name libstdc++.la -o -name libstdc++fs.la -o -name libsupc++.la -o -name libcc1.la -o -name libcc1plugin.la -o -name libcp1plugin.la -o -name 'libgomp.la' -o -name 'libgomp-plugin-*.la' -o -name libgfortran.la -o -name libgfortranbegin.la -o -name libmpx.la -o -name libmpxwrappers.la -o -name libitm.la -o -name libvtv.la -o -name 'lib*san.la' ')' -type f -delete;
+    chown -R 0:0 "${D}${LIBPATH}" 2> /dev/null;
+    local py gdbdir=/usr/share/gdb/auto-load${LIBPATH};
+    pushd "${D}${LIBPATH}" > /dev/null;
+    for py in $(find . -name '*-gdb.py');
+    do
+        local multidir=${py%/*};
+        insinto "${gdbdir}/${multidir}";
+        sed -i "/^libdir =/s:=.*:= '${LIBPATH}/${multidir}':" "${py}" || die;
+        doins "${py}";
+        rm "${py}" || die;
+    done;
+    popd > /dev/null;
+    export QA_EXECSTACK="usr/lib*/go/*/*.gox";
+    export QA_WX_LOAD="usr/lib*/go/*/*.gox";
+    if tc_version_is_at_least 4.3; then
+        pax-mark -r "${ED}/libexec/gcc/${CTARGET}/${GCC_CONFIG_VER}/cc1";
+        pax-mark -r "${ED}/libexec/gcc/${CTARGET}/${GCC_CONFIG_VER}/cc1plus";
+    fi;
+    if is_gcj; then
+        pax-mark -m "${ED}/libexec/gcc/${CTARGET}/${GCC_CONFIG_VER}/ecj1";
+        pax-mark -m "${ED}/${CTARGET}/gcc-bin/${GCC_CONFIG_VER}/gij";
+    fi;
+    if use test; then
+        einfo "Copying test results to ${EPREFIX}/var/cache/gcc/${SLOT} for future comparison";
+        ( dodir /var/cache/gcc/${SLOT};
+        cd "${WORKDIR}"/build || die;
+        find . -name \*.sum -exec cp --parents -v {} "${ED}"/var/cache/gcc/${SLOT} \; );
+    fi
+}
+toolchain_src_prepare () 
+{ 
+    export BRANDING_GCC_PKGVERSION="Gentoo ${GCC_PVR}";
+    cd "${S}" || die;
+    do_gcc_gentoo_patches;
+    do_gcc_PIE_patches;
+    do_gcc_CYGWINPORTS_patches;
+    if tc_is_live; then
+        BRANDING_GCC_PKGVERSION="${BRANDING_GCC_PKGVERSION}, commit ${EGIT_VERSION}";
+    fi;
+    eapply_user;
+    if ( tc_version_is_at_least 4.8.2 || _tc_use_if_iuse hardened ) && ! use vanilla; then
+        make_gcc_hard;
+    fi;
+    find "${S}" -name Makefile.in -exec sed -i '/^pkgconfigdir/s:=.*:=$(toolexeclibdir)/pkgconfig:' {} + || die;
+    setup_multilib_osdirnames;
+    gcc_version_patch;
+    local actual_version=$(< "${S}"/gcc/BASE-VER);
+    if [[ "${GCC_RELEASE_VER}" != "${actual_version}" ]]; then
+        eerror "'${S}/gcc/BASE-VER' contains '${actual_version}', expected '${GCC_RELEASE_VER}'";
+        die "Please set 'TOOLCHAIN_GCC_PV' to '${actual_version}'";
+    fi;
+    if tc_version_is_at_least 4.3 && _tc_use_if_iuse gcj; then
+        if tc_version_is_at_least 4.5; then
+            einfo "Copying ecj-4.5.jar";
+            cp -pPR "${DISTDIR}/ecj-4.5.jar" "${S}/ecj.jar" || die;
+        else
+            einfo "Copying ecj-4.3.jar";
+            cp -pPR "${DISTDIR}/ecj-4.3.jar" "${S}/ecj.jar" || die;
+        fi;
+    fi;
+    if tc_version_is_between 3.0 4.8; then
+        sed -i -e 's/\(install.*:\) install-.*recursive/\1/' "${S}"/libffi/Makefile.in || die;
+        sed -i -e 's/\(install-data-am:\).*/\1/' "${S}"/libffi/include/Makefile.in || die;
+    fi;
+    elibtoolize --portage --shallow --no-uclibc;
+    gnuconfig_update;
+    local f;
+    einfo "Fixing misc issues in configure files";
+    for f in $(grep -l 'autoconf version 2.13' $(find "${S}" -name configure));
+    do
+        ebegin "  Updating ${f/${S}\/} [LANG]";
+        patch "${f}" "${FILESDIR}"/gcc-configure-LANG.patch &> "${T}"/configure-patch.log || eerror "Please file a bug about this";
+        eend $?;
+    done;
+    sed -i 's|A-Za-z0-9|[:alnum:]|g' "${S}"/gcc/*.awk || die;
+    einfo "Remove texinfo (bug #198182, bug #464008)";
+    eapply "${FILESDIR}"/gcc-configure-texinfo.patch;
+    if [[ -x contrib/gcc_update ]]; then
+        einfo "Touching generated files";
+        ./contrib/gcc_update --touch | while read f; do
+            einfo "  ${f%%...}";
+        done;
+    fi
+}
+toolchain_src_test () 
+{ 
+    cd "${WORKDIR}"/build || die;
+    ulimit -v unlimited;
+    SANDBOX_ON=0 LD_PRELOAD= nonfatal emake -k check;
+    local success_tests=$?;
+    if [[ ! -d "${BROOT}"/var/cache/gcc/${SLOT} ]] && ! [[ ${success_tests} -eq 0 ]]; then
+        eerror "Reference test data does NOT exist at ${BROOT}/var/cache/gcc/${SLOT}";
+        eerror "Tests failed and nothing to compare with, so this is a fatal error.";
+        eerror "(Set GCC_TESTS_IGNORE_NO_BASELINE=1 to make this non-fatal for initial run.)";
+        if [[ -z ${GCC_TESTS_IGNORE_NO_BASELINE} ]]; then
+            die "Tests failed (failures occurred with no reference data)";
+        fi;
+    fi;
+    einfo "Testing complete! Review the following output to check for success or failure.";
+    einfo "Please ignore any 'mail' lines in the summary output below (no mail is sent).";
+    einfo "Summary:";
+    "${S}"/contrib/test_summary;
+    if [[ -d "${BROOT}"/var/cache/gcc/${SLOT} ]]; then
+        einfo "Comparing with previous cached results at ${BROOT}/var/cache/gcc/${SLOT}";
+        "${S}"/contrib/compare_tests "${BROOT}"/var/cache/gcc/${SLOT}/ . || die "Comparison for tests results failed, error code: $?";
+    fi
+}
+toolchain_src_unpack () 
+{ 
+    if tc_is_live; then
+        git-r3_src_unpack;
+        if [[ -z ${PATCH_VER} ]] && ! use vanilla; then
+            toolchain_fetch_git_patches;
+        fi;
+    else
+        if [[ -z ${PATCH_VER} && -n ${TOOLCHAIN_USE_GIT_PATCHES} ]]; then
+            toolchain_fetch_git_patches;
+        fi;
+    fi;
+    default
+}
+ver_cut () 
+{ 
+    local range=${1};
+    local v=${2:-${PV}};
+    local start end;
+    local -a comp;
+    __eapi7_ver_split "${v}";
+    local max=$((${#comp[@]}/2));
+    __eapi7_ver_parse_range "${range}" "${max}";
+    local IFS=;
+    if [[ ${start} -gt 0 ]]; then
+        start=$(( start*2 - 1 ));
+    fi;
+    echo "${comp[*]:start:end*2-start}"
+}
+ver_rs () 
+{ 
+    local v;
+    (( ${#} & 1 )) && v=${@: -1} || v=${PV};
+    local start end i;
+    local -a comp;
+    __eapi7_ver_split "${v}";
+    local max=$((${#comp[@]}/2 - 1));
+    while [[ ${#} -ge 2 ]]; do
+        __eapi7_ver_parse_range "${1}" "${max}";
+        for ((i = start*2; i <= end*2; i+=2 ))
+        do
+            [[ ${i} -eq 0 && -z ${comp[i]} ]] && continue;
+            comp[i]=${2};
+        done;
+        shift 2;
+    done;
+    local IFS=;
+    echo "${comp[*]}"
+}
+ver_test () 
+{ 
+    local va op vb;
+    if [[ $# -eq 3 ]]; then
+        va=${1};
+        shift;
+    else
+        va=${PVR};
+    fi;
+    [[ $# -eq 2 ]] || die "${FUNCNAME}: bad number of arguments";
+    op=${1};
+    vb=${2};
+    case ${op} in 
+        -eq | -ne | -lt | -le | -gt | -ge)
+
+        ;;
+        *)
+            die "${FUNCNAME}: invalid operator: ${op}"
+        ;;
+    esac;
+    __eapi7_ver_compare "${va}" "${vb}";
+    test $? "${op}" 2
+}
+want_minispecs () 
+{ 
+    if tc_version_is_at_least 6.0; then
+        return 0;
+    fi;
+    if tc_version_is_at_least 4.3.2 && _tc_use_if_iuse hardened; then
+        if ! want_pie; then
+            ewarn "PIE_VER or SPECS_VER is not defined in the GCC ebuild.";
+        else
+            if use vanilla; then
+                ewarn "You will not get hardened features if you have the vanilla USE-flag.";
+            else
+                if _tc_use_if_iuse nopie && _tc_use_if_iuse nossp; then
+                    ewarn "You will not get hardened features if you have the nopie and nossp USE-flag.";
+                else
+                    if ! hardened_gcc_works; then
+                        ewarn "Your $(tc-arch) arch is not supported.";
+                    else
+                        return 0;
+                    fi;
+                fi;
+            fi;
+        fi;
+        ewarn "Hope you know what you are doing. Hardened will not work.";
+        return 0;
+    fi;
+    return 1
+}
+want_pie () 
+{ 
+    ! _tc_use_if_iuse hardened && [[ -n ${PIE_VER} ]] && _tc_use_if_iuse nopie && return 1;
+    [[ -n ${PIE_VER} ]] && [[ -n ${SPECS_VER} ]] && return 0;
+    tc_version_is_at_least 4.3.2 && return 1;
+    [[ -z ${PIE_VER} ]] && return 1;
+    _tc_use_if_iuse nopie || return 0;
+    return 1
+}
