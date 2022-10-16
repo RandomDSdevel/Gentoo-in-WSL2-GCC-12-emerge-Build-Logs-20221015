@@ -1,2 +1,2 @@
 … ~ # emerge -pqv '=sys-devel/gcc-12.2.1_p20221008::gentoo' 2>&1 | tee -a "${THIS_FILE}"
-[ebuild  NS   ] sys-devel/gcc-12.2.1_p20221008 [11.3.0] USE="(cxx) fortran (multilib) nls nptl objc objc++ openmp (pie) sanitize ssp -ada (-cet) (-custom-cflags) -d -debug -doc (-fixed-point) -go -graphite (-hardened) -jit (-libssp) -lto -objc-gc (-pch) -pgo -systemtap -test -valgrind -vanilla -vtv -zstd" 
+[ebuild  NS   ] sys-devel/gcc-12.2.1_p20221008 [11.3.1_p20221007] USE="(cxx) fortran (multilib) nls nptl objc objc++ openmp (pie) sanitize ssp -ada (-cet) (-custom-cflags) -d -debug -doc (-fixed-point) -go -graphite (-hardened) -jit (-libssp) -lto -objc-gc (-pch) -pgo -systemtap -test -valgrind -vanilla -vtv -zstd" 

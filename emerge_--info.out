@@ -1,15 +1,15 @@
 … ~ # emerge --info '=sys-devel/gcc-12.2.1_p20221008::gentoo' 2>&1 | tee -a "${THIS_FILE}"
-Portage 3.0.38.1 (python 3.10.8-final-0, default/linux/amd64/17.1/desktop/plasma, gcc-11.3.0, glibc-2.36-r4, 5.15.68.1-microsoft-standard-WSL2 x86_64)
+Portage 3.0.38.1 (python 3.10.8-final-0, default/linux/amd64/17.1/desktop/plasma, gcc-11, glibc-2.36-r4, 5.15.68.1-microsoft-standard-WSL2 x86_64)
 =================================================================
                          System Settings
 =================================================================
 System uname: Linux-5.15.68.1-microsoft-standard-WSL2-x86_64-Intel-R-_Core-TM-_i9-9880H_CPU_@_2.30GHz-with-glibc2.36
-KiB Mem:     3932480 total,   3288576 free
-KiB Swap:    1048576 total,   1007768 free
-Timestamp of repository gentoo: Sat, 15 Oct 2022 02:30:01 +0000
-Head commit of repository gentoo: dd0927e086d7352675d44ff37500805143f3d380
-Timestamp of repository 4nykey: Thu, 13 Oct 2022 22:18:27 +0000
-Head commit of repository 4nykey: 066d75e911d0ae3a90231f7ae69e5d951c152322
+KiB Mem:     3932480 total,   3334000 free
+KiB Swap:    1048576 total,   1000516 free
+Timestamp of repository gentoo: Sat, 15 Oct 2022 22:30:01 +0000
+Head commit of repository gentoo: d0184c4dcea338b7c350f09c540b2c5dd9927cd8
+Timestamp of repository 4nykey: Sat, 15 Oct 2022 13:03:18 +0000
+Head commit of repository 4nykey: 0fe82fbae995efccf261cab1b15eeed8ecf186f6
 
 sh bash 5.1_p16-r2
 ld GNU ld (Gentoo 2.38 p4) 2.38
@@ -28,7 +28,7 @@ sys-devel/automake:        1.16.5::gentoo
 sys-devel/binutils:        2.38-r2::gentoo, 2.39-r3::gentoo
 sys-devel/binutils-config: 5.4.1::gentoo
 sys-devel/clang:           14.0.6-r1::gentoo, 15.0.2::gentoo
-sys-devel/gcc:             11.3.0::gentoo
+sys-devel/gcc:             11.3.1_p20221007::gentoo
 sys-devel/gcc-config:      2.8::gentoo
 sys-devel/libtool:         2.4.7::gentoo
 sys-devel/lld:             15.0.2-r1::gentoo
@@ -43,10 +43,10 @@ gentoo
     sync-type: rsync
     sync-uri: rsync://rsync.gentoo.org/gentoo-portage
     priority: -1000
-    sync-rsync-verify-metamanifest: yes
-    sync-rsync-extra-opts: 
     sync-rsync-verify-jobs: 1
+    sync-rsync-extra-opts: 
     sync-rsync-verify-max-age: 24
+    sync-rsync-verify-metamanifest: yes
 
 4nykey
     location: /var/db/repos/4nykey
